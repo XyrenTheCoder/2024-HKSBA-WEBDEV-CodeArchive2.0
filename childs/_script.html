@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>CodeArchive2.0 - &lt;SCRIPT&gt; tag</title>
+        <link rel="stylesheet" href="../styling/maintheme.css">
+        <link rel="stylesheet" href="../styling/highlight/styles/atom-one-dark.min.css">
+        <script src="../styling/highlight/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+    <body bgcolor="#161618" style='overflow-x:hidden;'>
+        <div>
+            <div class="topnav">
+                <img align="left" src="../media/images/codearchive.gif">
+                <div>
+                    <a href="./index.html" target="_self">Logout</a>
+                    <a href="content.html#ABOUT" target="_self">About</a>
+                    <a href="content.html#CONTACT">Contact</a>
+                    <a class="active" href="./home.html" target="_self">Home</a>
+                </div>
+            </div>
+            <div class="sidenav">
+                <p>placeholder</p>
+                <a href='#INTRO'><p>Introduction</p></a></li>
+                <a href='#TAGS'><p>Tags</p></a></li>
+                <a href='#STRUCTURAL'><p>Structural tags</p></a></li>
+                <a href='#CONTENT'><p>Content tags</p></a></li>
+            </div>
+            <div class="gtranslate_wrapper"></div>
+            <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+            <script>window.gtranslateSettings = {"default_language":"en", "languages":["en", "zh-TW", "el", "es", "ru", "de", "tl", "fr", "it"], "wrapper_selector":".gtranslate_wrapper"}</script>
+        </div>
+        <div class='main'>
+            <div>
+                <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+                <div>
+                    <h1>HTML &lt;SCRIPT&gt; Tag</h1>
+                    <hr>
+                    <h2>Definition and Usage</h2>
+                        <p>The <code>&lt;SCRIPT&gt;</code> tag is being used for embedding a client side script written in javascript.</p>
+                        <p>It is often placed in the <code>&lt;head&gt;</code> tag but it can also be placed in <code>&lt;body&gt;</code>, depending when the script needs to be loaded.</p>
+                        <p>The <code>&lt;script&gt;</code> element either contains scripting statements, or it points to an external script file through the <code class='attr'>src</code> attribute.</p>
+                        <hr>
+                    <h2>Attribute(s)</h2>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th style="width: 250px;">Attribute</th>
+                                    <th style="width: 140px;">Value</th>
+                                    <th style="width: 550px;">Description</th>
+                                </tr>
+                                <tr>
+                                    <td>async</td>
+                                    <td>async</td>
+                                    <td>Specifies that the script is downloaded in parallel to parsing the page, and executed as soon as it is available (before parsing completes). (Only for external scripts)</td>
+                                </tr>
+                                <tr>
+                                    <td>crossorigin</td>
+                                    <td>anonymous<br>use-credentials</td>
+                                    <td>Sets the mode of the request to an HTTP CORS Request.</td>
+                                </tr>
+                                <tr>
+                                    <td>defer</td>
+                                    <td>defer</td>
+                                    <td>Specifies that the script is downloaded in parallel to parsing the page, and executed after the page has finished parsing. (Only for external scripts)</td>
+                                </tr>
+                                <tr>
+                                    <td>integrity</td>
+                                    <td><i>filehash</i></td>
+                                    <td>Allows a browser to check the fetched script to ensure that the code is never loaded if the source has been manipulated.</td>
+                                </tr>
+                                <tr>
+                                    <td>nomodule</td>
+                                    <td><i>boolean</i></td>
+                                    <td>Specifies that the script should not be executed in browsers supporting <em>ES2015</em> modules.</td>
+                                </tr>
+                                <tr>
+                                    <td>referrerpolicy</td>
+                                    <td>no-referrer<br>no-referrer-when-downgrade<br>origin<br>origin-when-cross-origin<br>same-origin<br>strict-origin<br>strict-origin-when-cross-origin<br>unsafe-url</td>
+                                    <td>Specifies which referrer information to send when fetching a script.</td>
+                                </tr>
+                                <tr>
+                                    <td>src</td>
+                                    <td><i>URL</i></td>
+                                    <td>Specifies the URL of an external script file.</td>
+                                </tr>
+                                <tr>
+                                    <td>type</td>
+                                    <td><i>scripttype</i></td>
+                                    <td>Specifies the media type of the script.</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>The <code>&lt;SCRIPT&gt;</code> tag supports <a href='!global_attr.html' target='_self'>Global Attributes in HTML</a>.</p>
+                        <hr>
+                    <h2>Examples and Syntax</h2>
+                        <div class='code'>
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;web title&lt;/title&gt;
+        &lt;script&gt;
+            document.getElementById("id").innerHTML = "hello world";
+        &lt;/script&gt;
+    &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                        <hr>
+                    <h2>Default CSS Values and Settings</h2>
+                        <p>Most browsers display the <code>&lt;SCRIPT&gt;</code> element with the default values below:</p>
+                        <div class='code'>
+                            <pre><code class="language-css">script {
+    display: none;
+}</code></pre>
+                        </div>
+                        <hr>
+                    <h2>Extra</h2>
+                        <p>The <code>&lt;NOSCRIPT&gt;</code> tag is sometimes being used with the <code>&lt;SCRIPT&gt;</code> element for users that have disabled scripts in their browser, or have a browser that doesn't support client-side scripting.</p>
+                        <p>The <code>&lt;SCRIPT&gt;</code> tag supports <a href='!global_attr.html' target='_self'>Global Attributes in HTML</a>.</p>
+                        <div class='code'>
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;web title&lt;/title&gt;
+        &lt;script type="text/javascript"&gt;
+            document.write("Hello World!");
+        &lt;/script&gt;
+        &lt;noscript&gt;Your browser does not support JavaScript!&lt;/noscript&gt;
+     &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                    <h2>Differences Between HTML and XHTML</h2>
+                        <p>In XHTML, the content inside scripts is declared as #PCDATA (instead of CDATA), which means that entities will be parsed.</p>
+                        <p>This means that in XHTML, all special characters should be encoded, or all content should be wrapped inside a CDATA section:</p>
+                        <div class='code'>
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;web title&lt;/title&gt;
+        &lt;script type="text/javascript"&gt;
+            //&lt;![CDATA[
+            var i = 10;
+            if (i &lt; 5) {
+                // some code
+            }
+            //]]&gt;
+        &lt;/script&gt;
+     &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                </div>
+                <h3>Source: <a href='https://w3schools.com' target='_blank'>W3Schools</a></h3>
+                <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p class="p" align="right" style="padding-right:10px;">Last updated: 13 March 2023</p>
+    </footer>
+</html>

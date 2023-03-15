@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>CodeArchive2.0 - &lt;!DOCTYPE&gt; declaration</title>
+        <link rel="stylesheet" href="../styling/maintheme.css">
+        <link rel="stylesheet" href="../styling/highlight/styles/atom-one-dark.min.css">
+        <script src="../styling/highlight/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+    <body bgcolor="#161618" style='overflow-x:hidden;'>
+        <div>
+            <div class="topnav">
+                <img align="left" src="../media/images/codearchive.gif">
+                <div>
+                    <a href="./index.html" target="_self">Logout</a>
+                    <a href="content.html#ABOUT" target="_self">About</a>
+                    <a href="content.html#CONTACT">Contact</a>
+                    <a class="active" href="./home.html" target="_self">Home</a>
+                </div>
+            </div>
+            <div class="sidenav">
+                <p>placeholder</p>
+                <a href='#INTRO'><p>Introduction</p></a></li>
+                <a href='#TAGS'><p>Tags</p></a></li>
+                <a href='#STRUCTURAL'><p>Structural tags</p></a></li>
+                <a href='#CONTENT'><p>Content tags</p></a></li>
+            </div>
+            <div class="gtranslate_wrapper"></div>
+            <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+            <script>window.gtranslateSettings = {"default_language":"en","languages":["en","zh-TW","el","es","ru","de","tl","fr","it"],"wrapper_selector":".gtranslate_wrapper"}</script>
+        </div>
+        <div class='main'>
+            <div>
+                <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+                <div>
+                    <h1>HTML &lt;!DOCTYPE&gt; Declaration</h1>
+                    <hr>
+                    <h2>Definition and Usage</h2>
+                        <p>All HTML documents must start with a <code>&lt;!DOCTYPE&gt;</code> declaration, otherwise it will be defined as using <a href='https://en.m.wikipedia.org/wiki/Quirks_mode' target='_blank'>quirks mode</a>.</p>
+                        <p>This declaration is not an HTML tag but an "information" to the browser about what document type to expect.</p>
+                        <hr>
+                    <h2>Examples</h2>
+                        <p>In HTML5, the declaration is simply:
+                        <div class='code'>
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;</code></pre>
+                        </div>
+                        <p>In older documents, the declaration is more complicated because they must refer to a DTD (Document Type Definition).</p>
+                        <p>HTML4.01:</p>
+                        <div class='code'>
+                            <pre><code class="language-html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code></pre>
+                        </div>
+                        <p>XHTML 1.1:</p>
+                        <div class='code'>
+                            <pre><code class="language-html">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</code></pre>
+                        </div>
+                        <hr>
+                    <h2>Extra</h2>
+                        <p>Same as most of the tags, the <code>&lt!DOCTYPE&gt;</code> declaration is not case sensitive (The stricter document types might be case sensitive), therefore some may use one of the examples below as they are all valid:</p>
+                        <div class='code'>
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;</code></pre>
+                            <pre><code class="language-html">&lt;!doctype html&gt;</code></pre>
+                            <pre><code class="language-html">&lt;!DocType html&gt;</code></pre>
+                            <pre><code class="language-html">&lt;!Doctype html&gt;</code></pre>
+                        </div>
+                </div>
+                <h3>Source: <a href='https://w3schools.com' target='_blank'>W3Schools</a></h3>
+                <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p class="p" align="right" style="padding-right:10px;">Last updated: 13 March 2023</p>
+    </footer>
+</html>

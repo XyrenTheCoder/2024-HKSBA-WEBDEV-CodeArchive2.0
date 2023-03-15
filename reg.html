@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <link rel="stylesheet" href="./styling/logintheme.css">
+        <title>CodeArchive2.0 Register</title>
+        <script>
+            function setCookie(event) {
+                event.preventDefault();
+                var newusr = document.getElementById("username").value;
+                var newpasswd = document.getElementById("password").value;
+                var checkpasswd = document.getElementById("password0").value;
+                var checked = document.getElementById("agree").checked;
+                var nameRegex = /^[a-zA-Z0-9]+$/;
+                var validUsername = document.form.username.value.match(nameRegex);
+
+                if (newusr.length < 3) {
+                    alert("Your username must contain at least 4 characters.\n(Should only contain a-z, A-Z and 0-9)");
+                } else if (validUsername == null) {
+                    alert("Your username must only contain a-z, A-Z and 0-9.");
+                } else if (newpasswd.length < 6) {
+                    alert("Your password must be >6 characters long.\nPlease set a longer password.");
+                } else if (newpasswd !== checkpasswd) {
+                    alert("Password does not match.");
+                } else if (checked != true) {
+                    alert("Please read through README.md and click the checkbox before proceeding.");
+                } else if ((newusr.length > 3) && (validUsername != null) && (newpasswd === checkpasswd) && (checked == true)) {
+                    document.cookie = newusr + "=" + newpasswd + "; path=index.html";
+                    window.close();
+                } else {
+                    alert("An unknown error occured.");
+                }
+                return;
+            }
+        </script>
+    </head>
+    <body background="./media/images/loginbg.jpg">
+        <div>
+            <img src='./media/images/codearchive.gif'>
+            <form id="form" name='form'>
+                <div class="grandParentContainer">
+                    <div class="parentContainer">
+                        <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to Login</a></p>
+                        <fieldset>
+                            <div class="form-group">
+                                <h1 class='center'>(Temporarily) Register new user on CodeArchive2.0</h1>
+                                <h2 class='center'>Please read through README.md before proceeding.</h2>
+                                <label for="username0" class="center">Username</label>
+                                <input type="username" id="username" class="form-control center">
+                                <br>
+                                <label for="password0" class="center">Password</label>
+                                <input type="password" id="password" class="form-control center">
+                                <br>
+                                <label for="password1" class="center">Confirm password</label>
+                                <input type="password" id="password0" class="form-control center">
+                                <p class='center'><a onclick="window.open('./README.md', target='_self');">Open README.md</a></p>
+                                <div>
+                                    <hr>
+                                    <input type='checkbox' id='agree' class='alignleft check-box'><span style="color: #17a8d4;">I agree with the usage of Cookie</span>
+                                    <hr>
+                                    <button type="submit" class="button" onClick="setCookie(event);"><span>Confirm</span></button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <noscript>
+        <p1><b>Uh oh!</b></p1><br>
+        <p3>Looks like your browser does not support JavaScript.</p3><br>
+        <p>Please try to use other browsers to fix this problem.</p>
+    </noscript>
+</html>

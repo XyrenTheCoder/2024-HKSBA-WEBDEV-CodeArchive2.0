@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <link rel="stylesheet" href="./styling/logintheme.css">
+        <title>CodeArchive2.0 Login</title>
+        <script>
+            var username = "default";
+            var password = "123456";
+
+            function newpasswd() {
+                window.open("./reg.html", target='_self');
+            }
+
+            /* function resetCookie(user) {
+                document.cookie = user + '=; expires=Thu, 01 Jan 1970 00:00:00 UTC'
+            } */
+
+            function auth(event) {
+                event.preventDefault();
+                var input0 = document.getElementById("usernamew").value;
+                var input1 = document.getElementById("passwordw").value;
+                let getc = decodeURIComponent(document.cookie).split(';')[0];
+                let get = getc.split('=');
+                let regusr = get[0];
+                let regpasswd = get[1]
+
+                if ((input0 === username && input1 === password) || (input0 === regusr && input1 === regpasswd)) {
+                    window.open("./home.html", target='_self');
+                } else {
+                    alert("Invalid username or password, please try again.");
+                }
+                return;
+            }
+
+            function getpasswd() {
+                alert('Default username and password are: ' + username + ', ' + password + '\nYou can register a new temporary user. (Will be deleted when seesion expires.)');
+            }
+        </script>
+    </head>
+    <body background="./media/images/loginbg.jpg">
+        <div>
+            <img src='./media/images/codearchive.gif'>
+            <form id="form">
+                <div class="grandParentContainer">
+                    <div class="parentContainer">
+                        <fieldset>
+                            <div class="form-group">
+                                <h1 class="center">Welcome to CodeArchive2.0. Please login to continue.</h1>
+                                <h2 class="center">You may use the default or the newly registered username and password.</h2>
+                                <label for="username0" class="center">Username</label>
+                                <input type="username" id="usernamew" class="form-control center">
+                                <br>
+                                <label for="password0" class="center">Password</label>
+                                <input type="password" id="passwordw" class="form-control center">
+                                <p class="center"><a onclick="getpasswd();">Forgot password?</a></p>
+                                <div>
+                                    <hr>
+                                    <button type='button' class="button" onClick="newpasswd();"><span>Register </span></button>
+                                    <hr>
+                                    <button type='submit' class="button" onClick="auth(event);"><span>Login </span></button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <noscript>
+        <p1><b>Uh oh!</b></p1><br>
+        <p3>Looks like your browser does not support JavaScript.</p3><br>
+        <p>Please try to use other browsers to fix this problem.</p>
+    </noscript>
+</html>

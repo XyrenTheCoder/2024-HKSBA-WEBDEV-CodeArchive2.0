@@ -1,0 +1,29 @@
+<!-- colors -->
+main blue: #17a8d4
+minor blue: #115569
+main white: #fcfcfc
+minor white: #bfcbde
+main black: #161618
+minor black: #2b2c2b
+main gray: #212124
+minor gray: #5c5c5b
+code: #e06c75
+
+<!-- backgrounds -->
+top: minor black
+menu: main gray
+content: main black
+
+<!-- tags -->
+nav color: main gray
+h1 color: main blue
+h2 color: minor white
+h3 color: minor white
+p color: main white
+hr color: minor gray
+fieldset border color: minor gray
+legend color: main white
+
+<!-- code colors -->
+tags: #e06c75
+attr: #d19a66

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>CodeArchive2.0 - &lt;META&gt; tag</title>
+        <link rel="stylesheet" href="../styling/maintheme.css">
+        <link rel="stylesheet" href="../styling/highlight/styles/atom-one-dark.min.css">
+        <script src="../styling/highlight/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script>
+    </head>
+    <body bgcolor="#161618" style='overflow-x:hidden;'>
+        <div>
+            <div class="topnav">
+                <img align="left" src="../media/images/codearchive.gif">
+                <div>
+                    <a href="./index.html" target="_self">Logout</a>
+                    <a href="content.html#ABOUT" target="_self">About</a>
+                    <a href="content.html#CONTACT">Contact</a>
+                    <a class="active" href="./home.html" target="_self">Home</a>
+                </div>
+            </div>
+            <div class="sidenav">
+                <p>placeholder</p>
+                <a href='#INTRO'><p>Introduction</p></a></li>
+                <a href='#TAGS'><p>Tags</p></a></li>
+                <a href='#STRUCTURAL'><p>Structural tags</p></a></li>
+                <a href='#CONTENT'><p>Content tags</p></a></li>
+            </div>
+            <div class="gtranslate_wrapper"></div>
+            <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+            <script>window.gtranslateSettings = {"default_language":"en","languages":["en","zh-TW","el","es","ru","de","tl","fr","it"],"wrapper_selector":".gtranslate_wrapper"}</script>
+        </div>
+        <div class='main'>
+            <div>
+                <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+                <div>
+                    <h1>HTML &lt;META&gt; Tag</h1>
+                    <hr>
+                    <h2>Definition and Usage</h2>
+                        <p>The <code>&lt;META&gt;</code> tag defines metadata about the html document and it goes inside the <code>&lt;HEAD&gt;</code> tag</p>
+                        <p>It usually used for specifying the character set, defining keywords and controling the viewport.</p>
+                        <p>The metadata will not be displayed on the page, but it is machine parsable.</p>
+                        <hr>
+                    <h2>Attribute(s)</h2>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th style="width: 250px;">Attribute</th>
+                                    <th style="width: 140px;">Value</th>
+                                    <th style="width: 550px;">Description</th>
+                                </tr>
+                                <tr>
+                                    <td>charset</td>
+                                    <td><i>character_set</i></td>
+                                    <td>Specifies the character encoding for the HTML document.</td>
+                                </tr>
+                                <tr>
+                                    <td>content</td>
+                                    <td><i>text</i></td>
+                                    <td>Specifies the value associated with the http-equiv or name attribute.</td>
+                                </tr>
+                                <tr>
+                                    <td>http-equiv</td>
+                                    <td>content-security-policy<br>content-type<br>default-style<br>refresh</td>
+                                    <td>Provides an HTTP header for the information/value of the content attribute.</td>
+                                </tr>
+                                <tr>
+                                    <td>name</td>
+                                    <td>application-name<br>author<br>description<br>generator<br>keywords<br>viewport</td>
+                                    <td>Specifies a name for the metadata.</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>The <code>&lt;META&gt;</code> tag supports <a href='!global_attr.html' target='_self'>Global Attributes in HTML</a>.</p>
+                        <hr>
+                    <h2>Examples and Syntax</h2>
+                        <div class='code'>
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset='UTF-8'&gt;
+        &lt;meta name='keywords' content='html, css'&gt;
+        &lt;meta name='viewport' content='width=device-width, initial-scale=1.0'&gt;
+        &lt;meta name='author' content='Archie & Archisha'&gt;
+    &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+                        </div>
+                </div>
+                <h3>Source: <a href='https://w3schools.com' target='_blank'>W3Schools</a></h3>
+                <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p class="p" align="right" style="padding-right:10px;">Last updated: 13 March 2023</p>
+    </footer>
+</html>
