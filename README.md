@@ -10,6 +10,8 @@ This is important. Please read this carefully if you are confused with:
 
 - the usage of highlight.js
 
+- the usage of gtranslate
+
 -----------------------------------------------------------------------------------------------------------------------
 
 ## About the website (project) ##
@@ -41,6 +43,7 @@ I (author) do not keep and I do not use registered Cookie(s) in:
 The registered Cookie(s) will be deleted after the session is being closed and stopped.
 
 -----------------------------------------------------------------------------------------------------------------------
+
 ## About the usage of highlight.js in this web ##
 
 This website used highlight.js for code syntax highlighting.
@@ -49,4 +52,12 @@ All related files and rights of removal goes to: https://highlightjs.org
 
 -----------------------------------------------------------------------------------------------------------------------
 
-Author it0007, edited on 2023/3/4 (4 March 2023)
+## About the usage of gtranslate in this web ##
+
+This website used gtranslate for translation.
+
+All related files and rights of removal goes to: https://gtranslate.io
+
+-----------------------------------------------------------------------------------------------------------------------
+
+Author it0007, edited on 2023/3/17 (17 March 2023)

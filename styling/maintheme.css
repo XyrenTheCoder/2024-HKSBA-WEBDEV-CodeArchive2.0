@@ -30,11 +30,13 @@ img {
     margin-right: auto;
 }
 iframe {
+    display: block;
     background-color: #fcfcfc;
-    width: 100%;
-    height: 200px;
+    width: 800px; /* 16:9 scale */
+    height: 450px;
     border: 3px solid #5c5c5b;
     border-left: 8px solid #17a8d4;
+    margin: 0 auto;
 }
 hr {
     border: 1px solid #5c5c5b;
@@ -67,6 +69,8 @@ table {
     background-color: #212124;
     text-align: center;
     font: 15px Verdana;
+    margin-left: auto;
+    margin-right: auto;
 }
 th {
     padding: 10px;
@@ -168,10 +172,61 @@ code {
 .main {
     margin-left: 200px; /* Same as the width of the sidenav */
     padding-top: 60px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+select {
+    background-color: #fcfcfc;
+    border: thin solid #17a8d4;
+    border-radius: 4px;
+    display: inline-block;
+    font: 15px Verdana;
+    color: #fcfcfc;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+
+    /* reset */
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select.minimal {
+    background-color: #212124;
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+}
+select.minimal:focus {
+    background-image:
+        linear-gradient(45deg, #17a8d4 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, #17a8d4 50%),
+        linear-gradient(to right, #fcfcfc, #fcfcfc);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: #17a8d4;
+    outline: 0;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
 }
