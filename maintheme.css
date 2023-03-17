@@ -1,0 +1,232 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+a {
+    color: #17a8d4
+}
+a[tabindex]:focus {
+    color: #115569;
+    outline: none;
+}
+h1 {
+    color: #17a8d4;
+    font: 30px Verdana;
+}
+h2 {
+    color: #bfcbde;
+    font: 20px Verdana;
+}
+h3 {
+    color: #bfcbde;
+    font: 10px Verdana;
+}
+p {
+    color: #fcfcfc;
+    font: 15px Verdana;
+}
+img {
+    display: block;
+    margin-right: auto;
+}
+iframe {
+    display: block;
+    background-color: #fcfcfc;
+    width: 800px; /* 16:9 scale */
+    height: 450px;
+    border: 3px solid #5c5c5b;
+    border-left: 8px solid #17a8d4;
+    margin: 0 auto;
+}
+hr {
+    border: 1px solid #5c5c5b;
+}
+legend {
+    padding: 10px;
+    font: 18px Verdana;
+    color: #fcfcfc;
+    text-transform: uppercase;
+}
+fieldset {
+    padding-left: 0px;
+    padding-top: 0px;
+    border-color: #5c5c5b;
+    border-style: solid;
+}
+ul {
+    color: #fcfcfc;
+    background-color: #212124;
+    font: 15px Verdana;
+}
+ul li {
+    color: #fcfcfc;
+    margin: 5px;
+}
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 2px solid #fcfcfc;
+    background-color: #212124;
+    text-align: center;
+    font: 15px Verdana;
+    margin-left: auto;
+    margin-right: auto;
+}
+th {
+    padding: 10px;
+    color: #17a8d4;
+    border: 1px solid #fcfcfc;
+}
+td {
+    padding: 10px;
+    color: #fcfcfc;
+    border: 1px solid #bfcbde;
+}
+footer {
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+code {
+    font-family: monospace;
+    line-height: 20px;
+    padding: 2px;
+    width: 950px;
+    font-size: 100%;
+    background-color: #2b2c2b;
+    color: #e06c75;
+}
+.attr {
+    color: #d19a66;
+}
+.code {
+    border-left: 8px solid #17a8d4;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+.row {
+    display: flex;
+}
+.column {
+    flex: 33.33%;
+    padding: 5px;
+}
+.previous {
+    background-color: #2b2c2b;
+    color: #fcfcfc;
+}
+.round {
+    padding: 2px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.topnav {
+    background-color: #212124;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    width: 100%;
+    height: 60px;
+    margin: -8px;
+}
+.topnav a {
+    float: right;
+    color: #fcfcfc;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+    font: 20px Verdana;
+}
+.topnav a:hover {
+    background-color: #fcfcfc;
+    color: black;
+}
+.topnav a.active {
+    background-color: #17a8d4;
+    color: #fcfcfc;
+}
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #212124;
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fcfcfc;
+    display: block;
+}
+.sidenav a:hover {
+    color: #fcfcfc;
+}
+.main {
+    margin-left: 200px; /* Same as the width of the sidenav */
+    padding-top: 60px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+select {
+    background-color: #fcfcfc;
+    border: thin solid #17a8d4;
+    border-radius: 4px;
+    display: inline-block;
+    font: 15px Verdana;
+    color: #fcfcfc;
+    line-height: 1.5em;
+    padding: 0.5em 3.5em 0.5em 1em;
+
+    /* reset */
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+select.minimal {
+    background-color: #212124;
+    background-position:
+        calc(100% - 20px) calc(1em + 2px),
+        calc(100% - 15px) calc(1em + 2px),
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+}
+select.minimal:focus {
+    background-image:
+        linear-gradient(45deg, #17a8d4 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, #17a8d4 50%),
+        linear-gradient(to right, #fcfcfc, #fcfcfc);
+    background-position:
+        calc(100% - 15px) 1em,
+        calc(100% - 20px) 1em,
+        calc(100% - 2.5em) 0.5em;
+    background-size:
+        5px 5px,
+        5px 5px,
+        1px 1.5em;
+    background-repeat: no-repeat;
+    border-color: #17a8d4;
+    outline: 0;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}
