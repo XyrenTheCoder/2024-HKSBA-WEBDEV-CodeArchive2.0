@@ -1,13 +1,4 @@
 
-### \<script> tag
-+ Used for embedding a client side script written in javascript.
-+ Often placed in the \<head> tag but it can also be placed in \<body>, depending when the script needs to be loaded
-```html
-<script>
-document.getElementById("id").innerHTML = "hello world";
-<script>
-```
-
 ### \<style> tag
 + Used for defining style information for a document (in css)
 ```html
