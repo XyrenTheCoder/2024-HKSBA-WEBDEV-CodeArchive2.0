@@ -4,8 +4,24 @@
     <head>
         <title>CodeArchive2.0 - HTML5</title>
         <link rel="stylesheet" href="./styling/maintheme.css">
+        <script>
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+            }
+
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-dark') {
+                    setTheme('theme-light');
+                } else {
+                    setTheme('theme-dark');
+                }
+            }
+
+            setTheme('theme-dark');
+        </script>
     </head>
-    <body bgcolor="#161618" style='overflow-x:hidden;'>
+    <body style='overflow-x:hidden;'>
         <div>
             <div class="topnav">
                 <img align="left" src="./media/images/codearchive.gif">
@@ -14,6 +30,10 @@
                     <a href="#" target="_self">&#x1F4AC;Feedback</a>
                     <a href="./contact.html">&#x1F5A5;&#xFE0F;Contact</a>
                     <a class="active" href="./home.html" target="_self">&#x1F3E0;Home</a>
+                    <label id="switch" class="switch">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider">
+                        <span class="slider round"></span>
+                    </label>
                 </div>
             </div>
             <div class="sidenav">
