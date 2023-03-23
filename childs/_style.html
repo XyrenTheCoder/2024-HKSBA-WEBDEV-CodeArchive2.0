@@ -2,7 +2,7 @@
 <meta charset="UTF-8">
 <html>
     <head>
-        <title>CodeArchive2.0 - &lt;HEAD&gt; tag</title>
+        <title>CodeArchive2.0 - &lt;STYLE&gt; tag</title>
         <link rel="stylesheet" href="../styling/maintheme.css">
         <link rel="stylesheet" href="../styling/highlight/styles/atom-one-dark.min.css">
         <script src="../styling/highlight/highlight.min.js"></script>
@@ -34,61 +34,62 @@
             <div>
                 <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
                 <div>
-                    <h1>HTML &lt;HEAD&gt; Tag</h1>
+                    <h1>HTML &lt;STYLE&gt; Tag</h1>
                     <hr>
                     <h2>Definition and Usage</h2>
-                        <p>The <code>&lt;HEAD&gt;</code> tag is a container for metadata (data about the HTML document which will not be displayed) and is placed before the <code>&lt;BODY&gt;</code> tag.</p>
-                        <p>It typically defines the document title, character set, styles, scripts, and other meta information.</p>
-                        <p>The tags below can be placed inside the <code>&lt;HEAD&gt;</code> element:</p>
-                            <ul style='list-style-type:square'>
-                                <li><code>&lt;base&gt;</code></li>
-                                <li><code>&lt;link&gt;</code></li>
-                                <li><code>&lt;meta&gt;</code></li>
-                                <li><code>&lt;noscript&gt;</code></li>
-                                <li><code>&lt;script&gt;</code></li>
-                                <li><code>&lt;style&gt;</code></li>
-                                <li><code>&lt;title&gt;</code></li>
-                            </ul>
+                        <p>The <code>&lt;STYLE&gt;</code> tag is used to define style information (CSS) for a document.</p>
+                        <p>Inside the <code>&lt;STYLE&gt;</code> element specifies how HTML elements should render in a browser.</p>
+                        <p>If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used.</p>
+                        <p>To link to an external style sheet, use the <code>&lt;LINK&gt;</code> tag.</p>
                         <hr>
                     <h2>Attribute(s)</h2>
-                        <p>The <code>&lt;HEAD&gt;</code> tag supports <a href='!global_attr.html' target='_self'>Global Attributes in HTML</a>.</p>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th style='width: 140px;'>Attribute</th>
+                                    <th style='width: 250px;'>Value</th>
+                                    <th style='width: 550px;'>Description</th>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>media</td>
+                                    <td translate='no'><i>media_query</i></td>
+                                    <td>Specifies what media/device the media resource is optimized for.</td>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>type</td>
+                                    <td translate='no'>text/css</td>
+                                    <td>Specifies the media type of the &lt;STYLE&gt; tag</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>The <code>&lt;STYLE&gt;</code> tag supports <a href='!global_attr.html' target='_self'>Global Attributes in HTML</a>.</p>
+                        <p>The <code>&lt;STYLE&gt;</code> tag supports <a href='!event_attr.html' target='_self'>Event Attributes in HTML</a>.</p>
                         <hr>
                     <h2>Examples and Syntax</h2>
                         <div class='code'>
                             <pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;html&gt;
     &lt;head&gt;
-        &lt;title&gt;web title&lt;/title&gt;
-        &lt;meta charset='UTF-8'&gt;
-        &lt;base href='https://www.w3schools.com' target='_blank'&gt;
-        &lt;link rel='stylesheet' type='text/css' href='styles.css'&gt;
         &lt;style&gt;
-            h1 { color: red; }
-            p { color: blue; }
-        &lt;/style&gt;
-        &lt;script&gt;
-            function func() {
-                return false;
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+                line-height: 1.5em;
             }
-            func();
-        &lt;/script&gt;
-        &lt;noscript&gt;
-            &lt;h1&gt;Your browser does not support javascript.&lt;/h1&gt;
-        &lt;/noscript&gt;
+            h1 {color: red;}
+            p {color: cyan;}
+        &lt;/style&gt;
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;h1&gt;A stylized heading&lt;/h1&gt;
-        &lt;p&gt;A stylized paragraph&lt;/p&gt;
-        &lt;a href='tags/tag_base.asp'&gt;HTML base tag&lt;/a&gt;
-        &lt;h2&gt;I am being stylized by style.css&lt;/h2&gt;
+        &lt;h1&gt;contents&lt;/h1&gt;
     &lt;/body&gt;
 &lt;/html&gt;</code></pre>
                         </div>
                         <hr>
                     <h2>Default CSS Values and Settings</h2>
-                        <p>Most browsers display the <code>&lt;HEAD&gt;</code> element with the default values below:</p>
+                        <p>Most browsers display the <code>&lt;STYLE&gt;</code> element with the default values below:</p>
                         <div class='code'>
-                            <pre><code class="language-css">head {
+                            <pre><code class="language-css">style {
     display: none;
 }</code></pre>
                         </div>
@@ -99,6 +100,6 @@
         </div>
     </body>
     <footer>
-        <p class="p" align="right" style="padding-right:10px;">Last updated: 13 March 2023</p>
+        <p class="p" align="right" style="padding-right:10px;">Last updated: 23 March 2023</p>
     </footer>
 </html>
