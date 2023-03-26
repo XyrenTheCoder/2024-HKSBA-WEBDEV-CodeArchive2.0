@@ -4,6 +4,35 @@
     <head>
         <title>CodeArchive2.0 - HTML5</title>
         <link rel="stylesheet" href="./styling/maintheme.css">
+        <script>
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+                document.cookie = `theme=${themeName}; path=/; SameSite=None; Secure`;
+            }
+
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-dark') {
+                    setTheme('theme-light');
+                } else {
+                    setTheme('theme-dark');
+                }
+            }
+
+            let gets = decodeURIComponent(document.cookie).split('; ');
+            console.log(gets);
+            if (gets.length == 2) {
+                getc = gets[1];
+            } else {
+                getc = gets[0];
+            }
+            let gettheme = getc.split('=');
+            if (gettheme[0] === 'theme' && gettheme[1] === 'theme-light') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        </script>
     </head>
     <body bgcolor="#161618" style='overflow-x:hidden;'>
         <div>
@@ -11,7 +40,7 @@
                 <img align="left" src="./media/images/codearchive.gif">
                 <div>
                     <a href="./index.html" target="_self">&#x1F511;Logout</a>
-                    <a href="#ABOUT" target="_self">&#x1F4AC;Feedback</a>
+                    <a href="#" target="_self">&#x1F4AC;Feedback</a>
                     <a href="./contact.html">&#x1F5A5;&#xFE0F;Contact</a>
                     <a class="active" href="./home.html" target="_self">&#x1F3E0;Home</a>
                 </div>
@@ -29,6 +58,7 @@
         </div>
         <div class='main'>
             <div>
+                <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
                 <h1 id="CONTACT">Contacts</h1>
                 <div>
                     <h1>Hey coders!</h1>
@@ -49,7 +79,7 @@
             </div>
         </div>
         <footer>
-            <p class="p" style="text-align:-webkit-right; padding-right:10px;">Open source project by [it0007]. Last updated: 23 March 2023</p>
+            <p class="p" style="text-align:right; padding-right:10px;">Open source project by [it0007]. Last updated: 23 March 2023</p>
         </footer>
     </body>
 </html>

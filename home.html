@@ -8,6 +8,7 @@
             function setTheme(themeName) {
                 localStorage.setItem('theme', themeName);
                 document.documentElement.className = themeName;
+                document.cookie = `theme=${themeName}; path=/; SameSite=None; Secure`;
             }
 
             function toggleTheme() {
@@ -18,7 +19,19 @@
                 }
             }
 
-            setTheme('theme-dark');
+            let gets = decodeURIComponent(document.cookie).split('; ');
+            console.log(gets);
+            if (gets.length == 2) {
+                getc = gets[1];
+            } else {
+                getc = gets[0];
+            }
+            let gettheme = getc.split('=');
+            if (gettheme[0] === 'theme' && gettheme[1] === 'theme-light') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
         </script>
     </head>
     <body style='overflow-x:hidden;'>
@@ -236,7 +249,7 @@
             </div>
         </div>
         <footer>
-            <p class="p" style="text-align:-webkit-right; padding-right:10px;">Open source project by [it0007]. Last updated: 23 March 2023</p>
+            <p class="p" style="text-align:right; padding-right:10px;">Open source project by [it0007]. Last updated: 23 March 2023</p>
         </footer>
     </body>
 </html>

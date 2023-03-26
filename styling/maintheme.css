@@ -245,14 +245,14 @@ select:-moz-focusring {
     --codeattr: #d19a66;
 }
 .theme-light {
-    --mainaccent: #17a8d4;
-    --minoraccent: #115569;
-    --maintext: #fcfcfc;
-    --minortext: #bfcbde;
-    --primary: #d8d8e6;
-    --primary2: #2b2c2b;
-    --secondary: #212124;
-    --secondary2: #5c5c5b;
+    --mainaccent: #ae17d4;
+    --minoraccent: #461169;
+    --maintext: #0c0c0c;
+    --minortext: #32353b;
+    --primary: #f0f0f0;
+    --primary2: #8f8f8c;
+    --secondary: #fcfcfc;
+    --secondary2: #d6d6d4;
     --codedark: #e06c75;
     --codeattr: #d19a66;
 }

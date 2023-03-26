@@ -14,19 +14,19 @@
                 var nameRegex = /^[a-zA-Z0-9]+$/;
                 var validUsername = document.form.username.value.match(nameRegex);
 
-                if (newusr.length < 3) {
+                if (newusr.length < 4) {
                     alert("Your username must contain at least 4 characters.\n(Should only contain a-z, A-Z and 0-9)");
                 } else if (validUsername == null) {
                     alert("Your username must only contain a-z, A-Z and 0-9.");
                 } else if (newpasswd.length < 6) {
-                    alert("Your password must be >6 characters long.\nPlease set a longer password.");
+                    alert("Your password must be at least 6 characters long.\nPlease set a longer password.");
                 } else if (newpasswd !== checkpasswd) {
                     alert("Password does not match.");
                 } else if (checked != true) {
                     alert("Please read through README.md and click the checkbox before proceeding.");
                 } else if ((newusr.length > 3) && (validUsername != null) && (newpasswd === checkpasswd) && (checked == true)) {
-                    document.cookie = newusr + "=" + newpasswd + "; path=index.html";
-                    window.close();
+                    document.cookie = newusr + "=" + newpasswd + "; path=/; SameSite=None; Secure";
+                    window.alert("Registered successfully, you can now go back and login using the new username and password.");
                 } else {
                     alert("An unknown error occured.");
                 }

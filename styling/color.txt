@@ -1,4 +1,4 @@
-<!-- colors -->
+<!-- dark theme -->
 main blue: #17a8d4
 minor blue: #115569
 main white: #fcfcfc
@@ -10,20 +10,17 @@ minor gray: #5c5c5b
 code dark: #e06c75
 code attr: #d19a66;
 
-<!-- backgrounds -->
-top: minor black
-menu: main gray
-content: main black
-
-<!-- tags -->
-nav color: main gray
-h1 color: main blue
-h2 color: minor white
-h3 color: minor white
-p color: main white
-hr color: minor gray
-fieldset border color: minor gray
-legend color: main white
+<!-- light theme -->
+main purple: #ae17d4
+minor purple: #461169
+main black: #0c0c0c
+minor black: #32353b
+main white: #f0f0f0
+minor white: #8f8f8c
+main lightgray: #fcfcfc
+minor lightgray: #d6d6d4
+code light: #e06c75
+code attr: #d19a66;
 
 <!-- code colors -->
 tags: #e06c75
