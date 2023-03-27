@@ -4,14 +4,19 @@
     <head>
         <title>CodeArchive2.0 - &lt;!DOCTYPE&gt; declaration</title>
         <link rel="stylesheet" href="../styling/maintheme.css">
-        <link rel="stylesheet" href="../styling/highlight/styles/atom-one-dark.min.css">
+        <link rel="stylesheet" id='codetheme' href="../styling/highlight/styles/atom-one-dark.min.css">
         <script src="../styling/highlight/highlight.min.js"></script>
-        <script>hljs.highlightAll();</script>
         <script>
             function setTheme(themeName) {
                 localStorage.setItem('theme', themeName);
                 document.documentElement.className = themeName;
                 document.cookie = `theme=${themeName}; path=/; SameSite=None; Secure`;
+                var a = document.getElementById('codetheme');
+                if (themeName === 'theme-light') {
+                    a.href = "../styling/highlight/styles/a11y-light.css";
+                } else {
+                    a.href = "../styling/highlight/styles/atom-one-dark.min.css";
+                }
             }
 
             function toggleTheme() {
@@ -29,12 +34,14 @@
             } else {
                 getc = gets[0];
             }
+
             let gettheme = getc.split('=');
             if (gettheme[0] === 'theme' && gettheme[1] === 'theme-light') {
                 setTheme('theme-light');
             } else {
                 setTheme('theme-dark');
             }
+            hljs.highlightAll();
         </script>
     </head>
     <body bgcolor="#161618" style='overflow-x:hidden;'>

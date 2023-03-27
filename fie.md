@@ -1,28 +1,9 @@
 
-### \<style> tag
-+ Used for defining style information for a document (in css)
-```html
-<html>
-	<head>
-		<style>
-			h1 {color: red};
-			p {color: cyan};
-		</style>
-	</head>
-</html>
-```
-
 ### \<a> tag
 + Defines a hyperlink which is used to link one page to another
 + It takes the `href` attribute which defines the destination
 ```html
 <a href="https://example.com>visit example.com</a>
-```
-
-### \<b> tag
-+ Makes text bold
-```html
-<p> normal text <b> bold text </b> </p>
 ```
 
 ### \<br> tag
@@ -57,12 +38,6 @@
 		</div>
 	</body>
 </html>
-```
-
-### \<em> tag
-+ Used for defining emphasized text
-```html
-<p> normal text <em> emphasized text </em> </p>
 ```
 
 ### \<embed> tag
@@ -118,12 +93,6 @@
 <p> text </p>
 ```
 
-### \<i> tag
-+ Displays text in *italic*
-```html
-<p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
-```
-
 ### \<iframe> tag
 + Defines an inline frame.
 + An inline frame is used to embed another document within the current html document
@@ -173,12 +142,6 @@
 <p> never gonna give you up </p>
 ```
 
-### \<strong> tag
-+ Used for defining text with strong importance
-```html
-<strong> this is important text </strong>
-```
-
 ### \<table>, \<td>, \<tr> and \<th> tags
 + \<table>: defines an html table
 + \<td>: defines a table cell
@@ -206,10 +169,4 @@
 		<title> title </title>
 	</head>
 <head>
-```
-
-### \<u> tag
-+ Defines text with underline
-```html
-<u> underlined text </u>
 ```

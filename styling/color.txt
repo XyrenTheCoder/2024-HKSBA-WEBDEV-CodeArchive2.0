@@ -16,7 +16,7 @@ minor purple: #461169
 main black: #0c0c0c
 minor black: #32353b
 main white: #f0f0f0
-minor white: #8f8f8c
+minor white: #dddddc
 main lightgray: #fcfcfc
 minor lightgray: #d6d6d4
 code light: #e06c75
