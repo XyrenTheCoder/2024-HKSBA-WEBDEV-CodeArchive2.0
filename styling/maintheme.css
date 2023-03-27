@@ -144,7 +144,7 @@ code {
 }
 .topnav a:hover {
     background-color: var(--maintext);
-    color: black;
+    color: var(--secondary);
 }
 .topnav a.active {
     background-color: var(--mainaccent);
@@ -297,10 +297,10 @@ select:-moz-focusring {
     background-position: center;
 }
 input:checked+.slider {
-    background-color: #bfcbde;
+    background-color: var(--mainaccent);
 }
 input:focus+.slider {
-    box-shadow: 0 0 1px #bfcbde;
+    box-shadow: 0 0 1px var(--mainaccent);
 }
 input:checked+.slider:before {
     -webkit-transform: translateX(24px);
