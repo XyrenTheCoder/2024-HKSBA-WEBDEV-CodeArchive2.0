@@ -80,34 +80,36 @@
             <div>
                 <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
                 <div>
-                    <h1>HTML &lt;!DOCTYPE&gt; Declaration</h1>
+                    <h1>HTML &lt;!-- --&gt; Tag</h1>
                     <hr>
                     <h2>Definition and Usage</h2>
-                        <p>All HTML documents must start with a <code>&lt;!DOCTYPE&gt;</code> declaration, otherwise it will be defined as using <a href='https://en.m.wikipedia.org/wiki/Quirks_mode' target='_blank'>quirks mode</a>.</p>
-                        <p>This declaration is not an HTML tag but an "information" to the browser about what document type to expect.</p>
+                        <p>The comment tag is used to insert comments in the source code. Comments are not displayed.</p>
+                        <p>You can use comments to explain your code, which can help you when you edit the source code later. This is especially useful if you have a lot of code.</p>
                         <hr>
-                    <h2>Examples</h2>
-                        <p>In HTML5, the declaration is simply:
+                    <h2>Attribute(s)</h2>
+                    <div>
+                        <p>The <code>&lt;!--<i>comment</i>--&gt;</code> tag does not support <a href='!global_attr.html' target='_self'>Global Attributes in HTML</a> and <a href='!event_attr.html' target='_self'>Event Attributes in HTML</a>.</p>
+                    </div>
+                    <h2>Examples and Syntax</h2>
                         <div class='code'>
-                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;</code></pre>
+                            <pre><code class="language-html">&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;this is a heading&lt;/h1&gt; &lt;!--This is a h1 tag--&gt;
+        &lt;!--This is a comment and will not be displayed, happy coding!--&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
                         </div>
-                        <p>In older documents, the declaration is more complicated because they must refer to a DTD (Document Type Definition).</p>
-                        <p>HTML4.01:</p>
-                        <div class='code'>
-                            <pre><code class="language-html">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;</code></pre>
-                        </div>
-                        <p>XHTML 1.1:</p>
-                        <div class='code'>
-                            <pre><code class="language-html">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;</code></pre>
-                        </div>
-                        <hr>
                     <h2>Extra</h2>
-                        <p>Same as most of the tags, the <code>&lt!DOCTYPE&gt;</code> declaration is not case sensitive (The stricter document types might be case sensitive), therefore some may use one of the examples below as they are all valid:</p>
+                        <p>You can use the comment tag to "hide" scripts from browsers without support for scripts so they don't show them as plain text:</p>
+                        <p>The two forward slashes at the end of comment line (//) is the JavaScript comment symbol. This prevents JavaScript from executing the <code>--&gt;</code> tag.</p>
                         <div class='code'>
-                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;</code></pre>
-                            <pre><code class="language-html">&lt;!doctype html&gt;</code></pre>
-                            <pre><code class="language-html">&lt;!DocType html&gt;</code></pre>
-                            <pre><code class="language-html">&lt;!Doctype html&gt;</code></pre>
+                            <pre><code class="language-html">&lt;script type="text/javascript"&gt;
+    &lt;!--
+    function displayMsg() {
+        alert("Hello World!")
+    }
+    //--&gt;
+&lt;/script&gt;</code></pre>
                         </div>
                 </div>
                 <h3>Source: <a href='https://w3schools.com' target='_blank'>W3Schools</a></h3>

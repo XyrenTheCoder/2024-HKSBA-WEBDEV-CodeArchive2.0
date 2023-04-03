@@ -72,8 +72,25 @@
         </div>
         <div class='main'>
             <div>
-                <img src='./media/images/htmltrial.png' alt='HTML quick tutorial' width='1300px' onClick="window.open('./tutorial.html', target='_self');">
-                <!--<img src='./media/images/more.png' width='1300px'>-->
+                <h1>Useful Video</h1>
+                <h2>Use the dropdown bar below to select videos.</h2>
+                <div>
+                    <script>
+                        function changevideo(src) {
+                            document.getElementById('video').src = "https://www.youtube.com/embed/" + escape(src);
+                        }
+                    </script>
+                    <select id='videoswitcher' onchange="changevideo(document.getElementById(this.id).value);" class="minimal">
+                        <option value="PgAZ8KzfhO8">How To Make Website Using HTML And CSS | Website Design With HTML And CSS</option>
+                        <option value="P1RwfxvQKQM">How To Make Sidebar Menu On Website Using HTML And CSS</option>
+                        <option value="yxm3uL9IKSI">How To Make Cookies Message Popup For website Using HTML CSS JavaScript</option>
+                        <option value="PBcqGxrr9g8">How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript</option>
+                        <option value="p1GmFCGuVjw">How To Make A Website With Login And Register | HTML CSS & Javascript</option>
+                        <option value="GdrbE-s5DgQ">How To Create a Responsive Navbar Using HTML & CSS | Step By Step Tutorial</option>
+                    </select>
+                </div>
+                <iframe id="video" src="https://www.youtube.com/embed/PgAZ8KzfhO8" frameborder="0" allowfullscreen></iframe>
+                <h3>Source: <a href='https://www.youtube.com/@EasyTutorialsVideo' target='_blank'>Easy Tutorials</a>, <a href='https://www.youtube.com/@codehal' target="_blank">Codehal</a>, <a href='https://www.youtube.com/@webdevcreative' target='_blank'>Web Dev Creative</a> on YouTube</h3>
             </div>
         </div>
         <footer>
