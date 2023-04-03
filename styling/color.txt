@@ -7,8 +7,6 @@ main black: #161618
 minor black: #2b2c2b
 main gray: #212124
 minor gray: #5c5c5b
-code dark: #e06c75
-code attr: #d19a66;
 
 <!-- light theme -->
 main purple: #ae17d4
@@ -19,8 +17,6 @@ main white: #f0f0f0
 minor white: #dddddc
 main lightgray: #fcfcfc
 minor lightgray: #d6d6d4
-code light: #e06c75
-code attr: #d19a66;
 
 <!-- code colors -->
 tags: #e06c75

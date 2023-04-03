@@ -152,33 +152,40 @@ code {
 }
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: 210px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: var(--secondary);
     overflow-x: hidden;
+    overflow-y: scroll;
     padding-top: 10px;
 }
 .sidenav a {
-    padding: 6px 6px 6px 32px;
+    padding: 1px 6px 1px 35px;
     text-decoration: none;
-    font-size: 25px;
     color: var(--maintext);
+    display: block;
+}
+.sidenav span {
+    padding: 6px 6px 6px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--mainaccent);
     display: block;
 }
 .sidenav a:hover {
     color: var(--maintext);
 }
 .main {
-    margin-left: 200px; /* Same as the width of the sidenav */
+    margin-left: 210px; /* Same as the width of the sidenav */
     padding-top: 60px;
     padding-left: 200px;
     padding-right: 200px;
 }
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
+    .sidenav {padding-top: 30px;}
     .sidenav a {font-size: 18px;}
 }
 select {
