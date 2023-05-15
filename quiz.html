@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>CodeArchive2.0 - HTML5 Quiz</title>
+        <link rel="stylesheet" href="./styling/maintheme.css">
+        <link rel="stylesheet" id='codetheme' href="./styling/highlight/styles/atom-one-dark.min.css">
+        <script src="./styling/highlight/highlight.min.js"></script>
+        <script>
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+                document.cookie = `theme=${themeName}; path=/; SameSite=None; Secure`;
+                var a = document.getElementById('codetheme');
+                if (themeName === 'theme-light') {
+                    a.href = "./styling/highlight/styles/a11y-light.css";
+                } else {
+                    a.href = "./styling/highlight/styles/atom-one-dark.min.css";
+                }
+            }
+
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-dark') {
+                    setTheme('theme-light');
+                } else {
+                    setTheme('theme-dark');
+                }
+            }
+
+            let gets = decodeURIComponent(document.cookie).split('; ');
+            console.log(gets);
+            if (gets.length == 2) {
+                getc = gets[1];
+            } else {
+                getc = gets[0];
+            }
+
+            let gettheme = getc.split('=');
+            if (gettheme[0] === 'theme' && gettheme[1] === 'theme-light') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+            hljs.highlightAll();
+        </script>
+    </head>
+    <body bgcolor="#161618" style='overflow-x:hidden;'>
+        <div>
+            <div class="topnav">
+                <img align="left" src="./media/images/codearchive.gif">
+                <div>
+                    <a href="./index.html" target="_self">&#x1F511;Logout</a>
+                    <a href="#ABOUT" target="_self">&#x1F4AC;Feedback</a>
+                    <a href="./contact.html">&#x1F5A5;&#xFE0F;Contact</a>
+                    <a class="active" href="./tutorial.html" target="_self">&#x1F3E0;Home</a>
+                </div>
+            </div>
+            <div class="sidenav">
+                <br><br><br>
+                <p><span>Menu</span></p>
+                <a href='./tutorial.html'><p>Tutorial</p></a></li>
+                <a href='./videos.html'><p>Videos</p></a></li>
+                <a href='./quiz.html'><p>Quizzes</p></a></li>
+                <p><span>HTML References</span></p>
+                <div translate='no'>
+                    <a href='./childs/_comment.html'><p>&lt;!-- --&gt;</p></a></li>
+                    <a href='./childs/_doctype.html'><p>&lt;!DOCTYPE&gt;</p></a></li>
+                    <a href='./childs/_html.html'><p>&lt;HTML&gt;</p></a></li>
+                    <a href='./childs/_head.html'><p>&lt;HEAD&gt;</p></a></li>
+                    <a href='./childs/_meta.html'><p>&lt;META&gt;</p></a></li>
+                    <a href='./childs/_script.html'><p>&lt;SCRIPT&gt;</p></a></li>
+                    <a href='./childs/_style.html'><p>&lt;STYLE&gt;</p></a></li>
+                    <a href='./childs/_body.html'><p>&lt;BODY&gt;</p></a></li>
+                    <a href='./childs/_footer.html'><p>&lt;FOOTER&gt;</p></a></li>
+                </div>
+            </div>
+            <div class="gtranslate_wrapper"></div>
+            <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+            <script>window.gtranslateSettings = {"default_language":"en","languages":["en","zh-TW","el","es","ru","de","tl","fr","it"],"wrapper_selector":".gtranslate_wrapper"}</script>
+        </div>
+        <div class='main'>
+            <div>
+                <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+                <h1>HTML Quiz</h1>
+                <hr>
+                <h2>Q1: What is the correct HTML for adding a background color?</h2>
+                <div translate='no'>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;background&gt;red&lt;/background&gt;
+                            <input type="radio" name="q1" id="q1-0">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;body bg='red'&gt;
+                            <input type="radio" name="q1" id="q1-1">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;body style='background-color:red'&gt;
+                            <input type="radio" name="q1" id="q1-2">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+                <p id="q1-ans"></p>
+                <hr>
+                <h2>Q2: What is the correct HTML for creating a hyperlink?</h2>
+                <div translate='no'>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;a url='https://w3schools.com'&gt;W3Schools&lt;/a&gt;
+                            <input type="radio" name="q2" id="q2-0">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;a src='https://w3schools.com'&gt;W3Schools&lt;/a&gt;
+                            <input type="radio" name="q2" id="q2-1">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;a&gt;https://w3schools.com&lt;/a&gt;
+                            <input type="radio" name="q2" id="q2-2">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+                <p id="q2-ans"></p>
+                <hr>
+                <h2>Q3: How can you open a link in a new tab/browser window?</h2>
+                <div translate='no'>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;a href="url" target="_blank"&gt;&lt;/a&gt;
+                            <input type="radio" name="q3" id="q3-0">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;a href="url" target="new"&gt;
+                            <input type="radio" name="q3" id="q3-1">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;a href="url" new&gt;
+                            <input type="radio" name="q3" id="q3-2">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+                <p id="q3-ans"></p>
+                <hr>
+
+
+                <input type="button" value="Check your answers!" onClick="checkans();">
+                <script>
+                    var score = 0
+                    function checkans() {
+                        // question 1
+                        if (document.getElementById("q1-2").checked) {
+                            document.getElementById("q1-ans").innerText = 'Correct answer!';
+                            score += 1;
+                        } else if (document.getElementById("q1-0").checked || document.getElementById("q1-1").checked) {
+                            document.getElementById("q1-ans").innerText = 'Incorrect answer!';
+                        } else {
+                            document.getElementById("q1-ans").innerText = "You didn't answer!";
+                        }
+
+                        // question 2
+                        if (document.getElementById("q2-1").checked) {
+                            document.getElementById("q2-ans").innerText = 'Correct answer!';
+                            score += 1;
+                        } else if (document.getElementById("q2-0").checked || document.getElementById("q2-2").checked) {
+                            document.getElementById("q2-ans").innerText = 'Incorrect answer!';
+                        } else {
+                            document.getElementById("q2-ans").innerText = "You didn't answer!";
+                        }
+
+                        // question 3
+                        if (document.getElementById("q3-0").checked) {
+                            document.getElementById("q3-ans").innerText = 'Correct answer!';
+                            score += 1;
+                        } else if (document.getElementById("q3-1").checked || document.getElementById("q3-2").checked) {
+                            document.getElementById("q3-ans").innerText = 'Incorrect answer!';
+                        } else {
+                            document.getElementById("q3-ans").innerText = "You didn't answer!";
+                        }
+
+                        var percent = score / 3 * 100
+                        if (percent >= 80) {
+                            document.getElementById("bottom_text").innerText = 'Well done!';
+                        } else if (percent >= 50) {
+                            document.getElementById("bottom_text").innerText = 'Not bad!';
+                        } else {
+                            document.getElementById("bottom_text").innerText = 'Work harder!';
+                        }
+                        document.getElementById("score").innerText = `Your score: ${score} / 3`;
+                        document.getElementById("percentage").innerText = `Your percentage: ${Math.round(percent)}%`;
+                        score = 0;
+                    }
+                </script>
+
+                <p id="bottom_text" align="center"></p>
+                <h1 id="percentage" align="center"></h1>
+                <h2 id="score" align="center"></h2>
+            </div>
+
+            <h3>Source: <a href='https://w3schools.com' target='_blank'>W3Schools</a></h3>
+            <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+        </div>
+    </div>
+</body>
+<footer>
+    <p class="p" align="right" style="padding-right:10px;">Last updated: 15 May 2023</p>
+</footer>
+</html>

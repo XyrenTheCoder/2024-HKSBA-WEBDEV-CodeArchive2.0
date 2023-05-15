@@ -49,27 +49,27 @@
 ### \<fieldset> tag
 + Specifies a set of related form fields.
 ```html
-<form action="/action_page.php">  
-	<fieldset>  
-		<legend>caption</legend>  
-		<label for="fname">First name:</label>  
-		<input type="text" id="fname" name="fname"><br><br>  
-		<label for="lname">Last name:</label>  
+<form action="/action_page.php">
+	<fieldset>
+		<legend>caption</legend>
+		<label for="fname">First name:</label>
+		<input type="text" id="fname" name="fname"><br><br>
+		<label for="lname">Last name:</label>
 		<input type="text" id="lname"  name="lname"><br><br>
-		<input type="submit" value="Submit"> 
-	</fieldset>  
+		<input type="submit" value="Submit">
+	</fieldset>
 </form>
 ```
 
 ### \<form> tag
 + Defines an html form for user input
 ```html
-<form action="/action_page.php"  method="get">  
-	<label for="fname">First name:</label>  
-	<input type="text"  id="fname"  name="fname"><br><br>  
-	<label for="lname">Last name:</label>  
-	<input type="text"  id="lname"  name="lname"><br><br>  
-	<input type="submit"  value="Submit">  
+<form action="/action_page.php"  method="get">
+	<label for="fname">First name:</label>
+	<input type="text"  id="fname"  name="fname"><br><br>
+	<label for="lname">Last name:</label>
+	<input type="text"  id="lname"  name="lname"><br><br>
+	<input type="submit"  value="Submit">
 </form>
 ```
 
@@ -77,11 +77,11 @@
 + Used to define html headings
 + \<h1> is the largest and \<h6> is the smallest
 ```html
-<h1>This is heading 1</h1>  
-<h2>This is heading 2</h2>  
-<h3>This is heading 3</h3>  
-<h4>This is heading 4</h4>  
-<h5>This is heading 5</h5>  
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+<h4>This is heading 4</h4>
+<h5>This is heading 5</h5>
 <h6>This is heading 6</h6>
 ```
 
@@ -109,12 +109,12 @@
 ### \<input> tag
 + Specifies an input field where the user can enter data.
 ```html
-<form action="/action_page.php"  method="get">  
-	<label for="fname">First name:</label>  
-	<input type="text"  id="fname"  name="fname"><br><br>  
-	<label for="lname">Last name:</label>  
-	<input type="text"  id="lname"  name="lname"><br><br>  
-	<input type="submit"  value="Submit">  
+<form action="/action_page.php"  method="get">
+	<label for="fname">First name:</label>
+	<input type="text"  id="fname"  name="fname"><br><br>
+	<label for="lname">Last name:</label>
+	<input type="text"  id="lname"  name="lname"><br><br>
+	<input type="submit"  value="Submit">
 </form>
 ```
 
@@ -123,16 +123,16 @@
 + \<ul>: Defines an unordered list
 + \<li>: Defines a list item
 ```html
-<ol>  
-	<li>coffe</li>  
-	<li>tea</li>  
-	<li>milk</li>  
+<ol>
+	<li>coffe</li>
+	<li>tea</li>
+	<li>milk</li>
 </ol>
 
-<ul>  
-	<li>coffe</li>  
-	<li>tea</li>  
-	<li>milk</li>  
+<ul>
+	<li>coffe</li>
+	<li>tea</li>
+	<li>milk</li>
 </ul>
 ```
 
@@ -148,14 +148,14 @@
 + \<tr>: defines a table row
 + \<th>: defines a table header
 ```html
-<table>  
-	<tr>  
-		<th>Month</th>  
-		<th>Savings</th>  
-	</tr>  
-	<tr>  
-		<td>January</td>  
-		<td>$0</td>  
+<table>
+	<tr>
+		<th>Month</th>
+		<th>Savings</th>
+	</tr>
+	<tr>
+		<td>January</td>
+		<td>$0</td>
 	</tr>
 </table>
 ```
@@ -170,3 +170,6 @@
 	</head>
 <head>
 ```
+
+
+https://www.w3schools.com/quiztest/result.asp

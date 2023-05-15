@@ -84,6 +84,63 @@ td {
     color: var(--maintext);
     border: 1px solid var(--minortext);
 }
+.label0 {
+    background-color: var(--primary2);
+    padding: 1px 10px 1px 10px;
+    margin-bottom: 3px;
+}
+.label {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font: 15px Verdana;
+    color: var(--maintext);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--minortext);
+    border-radius: 50%;
+}
+.label:hover input ~ .radio {
+    background-color: var(--minoraccent);
+}
+.label input:checked ~ .radio {
+    background-color: var(--mainaccent);
+}
+.radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.label input:checked ~ .radio:after {
+    display: block;
+}
+.label .radio:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--minortext);
+}
 footer {
     padding-top: 5px;
     padding-bottom: 10px;
