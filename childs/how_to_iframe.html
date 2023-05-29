@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>CodeArchive2.0 - How to add an iframe</title>
+        <link rel="stylesheet" href="../styling/maintheme.css">
+        <link rel="stylesheet" id='codetheme' href="../styling/highlight/styles/atom-one-dark.min.css">
+        <script src="../styling/highlight/highlight.min.js"></script>
+        <script>
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+                document.cookie = `theme=${themeName}; path=/; SameSite=None; Secure`;
+                var a = document.getElementById('codetheme');
+                if (themeName === 'theme-light') {
+                    a.href = "../styling/highlight/styles/a11y-light.css";
+                } else {
+                    a.href = "../styling/highlight/styles/atom-one-dark.min.css";
+                }
+            }
+
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-dark') {
+                    setTheme('theme-light');
+                } else {
+                    setTheme('theme-dark');
+                }
+            }
+
+            let gets = decodeURIComponent(document.cookie).split('; ');
+            console.log(gets);
+            if (gets.length == 2) {
+                getc = gets[1];
+            } else {
+                getc = gets[0];
+            }
+
+            let gettheme = getc.split('=');
+            if (gettheme[0] === 'theme' && gettheme[1] === 'theme-light') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+            hljs.highlightAll();
+        </script>
+    </head>
+    <body bgcolor="#161618" style='overflow-x:hidden;'>
+        <div>
+            <div class="topnav">
+                <img align="left" src="../media/images/codearchive.gif">
+                <div>
+                    <a href="../index.html" target="_self">&#x1F511;Logout</a>
+                    <a href="https://forms.gle/7dtpB1RuatVe6Rtu9" target="_blank">&#x1F4AC;Feedback</a>
+                    <a href="../contact.html">&#x1F5A5;&#xFE0F;Contact</a>
+                    <a class="active" href="../tutorial.html" target="_self">&#x1F3E0;Home</a>
+                </div>
+            </div>
+            <div class="sidenav">
+                <br><br><br>
+                <p><span>Menu</span></p>
+                <a href='../tutorial.html'><p>Tutorial</p></a></li>
+                <a href='../videos.html'><p>Videos</p></a></li>
+                <a href='../quiz.html'><p>Quizzes</p></a></li>
+                <p><span>HTML References</span></p>
+                <div translate="no">
+                    <a href='../childs/_comment.html'><p>&lt;!-- --&gt;</p></a></li>
+                    <a href='../childs/_doctype.html'><p>&lt;!DOCTYPE&gt;</p></a></li>
+                    <a href='../childs/_html.html'><p>&lt;HTML&gt;</p></a></li>
+                    <a href='../childs/_head.html'><p>&lt;HEAD&gt;</p></a></li>
+                    <a href='../childs/_meta.html'><p>&lt;META&gt;</p></a></li>
+                    <a href='../childs/_script.html'><p>&lt;SCRIPT&gt;</p></a></li>
+                    <a href='../childs/_style.html'><p>&lt;STYLE&gt;</p></a></li>
+                    <a href='../childs/_body.html'><p>&lt;BODY&gt;</p></a></li>
+                    <a href='../childs/_footer.html'><p>&lt;FOOTER&gt;</p></a></li>
+                </div>
+            </div>
+            <div class="gtranslate_wrapper"></div>
+            <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+            <script>window.gtranslateSettings = {"default_language":"en","languages":["en","zh-TW","el","es","ru","de","tl","fr","it"],"wrapper_selector":".gtranslate_wrapper"}</script>
+        </div>
+        <div class='main'>
+            <div>
+                <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+                <div>
+                    <h1>How to add an iframe</h1>
+                    <hr>
+                    <h2>An HTML iframe is used to display a web page within a web page.</h2>
+                    <hr>
+                    <h2>Demonstration</h1>
+                    <iframe src="../tutorial.html" height="200" width="800" title="Iframe Example"></iframe>
+                    <p>The inline frame above used the code below:</p>
+                        <div class='code'>
+                            <pre><code class="language-html">&lt;iframe src="../tutorial.html" height="200" width="800" title="Iframe Example"&gt;&lt;/iframe&gt;</code></pre>
+                        </div>
+                    <hr>
+                    <h2>Definition and Usage</h2>
+                        <p>The <code>&lt;IFRAME&gt;</code> tag specifies an inline frame.</p>
+                        <p>An inline frame is used to embed another document within the current HTML document.</p>
+                    <hr>
+                    <h2>Attribute(s)</h2>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th style="width: 250px;">Attribute</th>
+                                    <th style="width: 140px;">Value</th>
+                                    <th style="width: 550px;">Description</th>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>allow</td>
+                                    <td translate='no'><i></i></td>
+                                    <td>Specifies a feature policy for the tag.</td>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>allowfullscreen</td>
+                                    <td><i>boolean</i></td>
+                                    <td>Set to true if the tag can activate fullscreen mode by calling the requestFullscreen() method.</td>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>allowpaymentrequest</td>
+                                    <td><i>boolean</i></td>
+                                    <td>Set to true if a cross-origin inline frame should be allowed to invoke the Payment Request API.</td>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>height</td>
+                                    <td><i>pixels</i></td>
+                                    <td>Specifies the height of an iframe. Default height is 150 pixels.</td>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>loading</td>
+                                    <td translate="no">eager<br>lazy</td>
+                                    <td>Specifies whether a browser should load an iframe immediately or to defer loading of iframes until some conditions are met.</td>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>name</td>
+                                    <td><i>text</i></td>
+                                    <td>Specifies the name of an iframe tag.</td>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>referrerpolicy</td>
+                                    <td translate="no">no-referrer<br>no-referrer-when-downgrade<br>origin<br>origin-when-cross-origin<br>same-origin<br>strict-origin-when-cross-origin<br>unsafe-url</td>
+                                    <td>Specifies which referrer information to send when fetching the iframe.</td>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>sandbox</td>
+                                    <td translate="no">allow-forms<br>allow-pointer-lock<br>allow-popups<br>allow-same-origin<br>allow-scripts<br>allow-top-navigation</td>
+                                    <td>Enables an extra set of restrictions for the content in an iframe.</td>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>src</td>
+                                    <td><i>URL</i></td>
+                                    <td>Specifies the address of the document to embed in the iframe.</td>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>srcdoc</td>
+                                    <td><i>HTML_code</i></td>
+                                    <td>Specifies the HTML content of the page to show in the iframe.</td>
+                                </tr>
+                                <tr>
+                                    <td translate='no'>width</td>
+                                    <td><i>pixels</i></td>
+                                    <td>Specifies the width of an iframe. Default width is 300 pixels.</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <p>The <code>&lt;IFRAME&gt;</code> tag supports <a href='!global_attr.html' target='_self'>Global Attributes in HTML</a> and <a href='!event_attr.html' target='_self'>Event Attributes in HTML</a>.</p>
+                        <hr>
+                    <h2>Examples and Syntax</h2>
+                        <div class='code'>
+                            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;
+    &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+                            </div>
+                            <hr>
+                        <h2>Setting Height and Width of an iframe</h2>
+                            <p>Use the <code class='attr'>height</code> and <code class='attr'>width</code> attributes to specify the size of the iframe.</p>
+                            <p>The <code class='attr'>height</code> and <code class='attr'>width</code> are specified in pixels by default:</p>
+                                <div class='code'>
+                                    <pre><code class="language-html">&lt;iframe src="demo_iframe.html" height="1200" width="400" title="Iframe Example"&gt;&lt;/iframe&gt;</code></pre>
+                                </div>
+                                <img src="../media/images/different_scaled_iframe.png" alt="differently scaled iframe" style="margin-left:auto;margin-right:auto;width:70%;">
+                            <p>Or you can add the <code class='attr'>style</code> attribute and use the CSS <code class='attr'>height</code> and <code class='attr'>width</code> properties:</p>
+                                <div class='code'>
+                                    <pre><code class="language-html">&lt;iframe src="demo_iframe.html" style="height:1200px;width:400px;" title="Iframe Example"&gt;&lt;/iframe&gt;</code></pre>
+                                </div>
+                            <hr>
+                        <h2>Changing the Border of an iframe</h2>
+                            <p>By default, an iframe has a border around it.</p>
+                                <img src="../media/images/bordered_iframe.png" alt="bordered iframe" style="margin-left:auto;margin-right:auto;width:70%;">
+                                <hr>
+                            <p>To remove the border, add the <code class='attr'>style</code> attribute and use the CSS border property:</p>
+                                <div class='code'>
+                                    <pre><code class="language-html">&lt;iframe src="demo_iframe.html" style="border:none;" title="Iframe Example"&gt;&lt;/iframe&gt;</code></pre>
+                                </div>
+                                <img src="../media/images/borderless_iframe.png" alt="borderless iframe" style="margin-left:auto;margin-right:auto;width:70%;">
+                                <hr>
+                            <p>With CSS, you can also change the size, style and color of the iframe's border:</p>
+                                <div class='code'>
+                                    <pre><code class="language-html">&lt;iframe src="demo_iframe.html" style="border:2px solid red;" title="Iframe Example"&gt;&lt;/iframe&gt;</code></pre>
+                                </div>
+                                <img src="../media/images/different_bordered_iframe.png" alt="differently bordered iframe" style="margin-left:auto;margin-right:auto;width:70%;">
+                                <hr>
+                        <h2>Targetting for a Link</h2>
+                            <p>An iframe can be used as the target frame for a link.</p>
+                            <p>The target attribute of the link must refer to the <code class='attr'>name</code> attribute of the iframe:</p>
+                                <div class='code'>
+                                    <pre><code class="language-html">&lt;iframe src="demo_iframe.html" name="iframe_a" title="Iframe Example"&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://www.w3schools.com" target="iframe_a"&gt;W3Schools.com&lt;/a&gt;&lt;/p&gt;</code></pre>
+                                </div>
+                </div>
+                <h3>Source: <a href='https://w3schools.com' target='_blank'>W3Schools</a></h3>
+                <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <p class="p" align="right" style="padding-right:10px;">Last updated: 13 March 2023</p>
+    </footer>
+</html>

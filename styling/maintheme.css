@@ -89,6 +89,9 @@ td {
     padding: 1px 10px 1px 10px;
     margin-bottom: 3px;
 }
+.label0:hover {
+    background-color: var(--secondary2);
+}
 .label {
     display: block;
     position: relative;
@@ -140,6 +143,17 @@ td {
     height: 8px;
     border-radius: 50%;
     background: var(--minortext);
+}
+.button {
+    display: block;
+    background-color: var(--mainaccent);
+    color: var(--minortext);
+    width: 180px;
+    height: 30px;
+    font: 15px Verdana;
+}
+.button:active {
+    background-color: var(--minoraccent);
 }
 footer {
     padding-top: 5px;
@@ -309,8 +323,8 @@ select:-moz-focusring {
     --codeattr: #d19a66;
 }
 .theme-light {
-    --mainaccent: #ae17d4;
-    --minoraccent: #461169;
+    --mainaccent: #7e98e6;
+    --minoraccent: #455fc5;
     --maintext: #0c0c0c;
     --minortext: #32353b;
     --primary: #f0f0f0;
