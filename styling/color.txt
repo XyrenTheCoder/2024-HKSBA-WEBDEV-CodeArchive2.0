@@ -9,8 +9,8 @@ main gray: #212124
 minor gray: #5c5c5b
 
 <!-- light theme -->
-main purple: #ae17d4
-minor purple: #461169
+main purple: #7e98e6
+minor purple: #455fc5455fc5
 main black: #0c0c0c
 minor black: #32353b
 main white: #f0f0f0
