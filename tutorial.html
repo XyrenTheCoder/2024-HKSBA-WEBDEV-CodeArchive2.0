@@ -52,21 +52,16 @@
             <div class="sidenav">
                 <br><br><br>
                 <p><span>Menu</span></p>
-                <a href='./tutorial.html'><p>Tutorial</p></a></li>
-                <a href='./videos.html'><p>Videos</p></a></li>
-                <a href='./quiz.html'><p>Quizzes</p></a></li>
-                <p><span>HTML References</span></p>
-                <div translate='no'>
-                    <a href='./childs/_comment.html'><p>&lt;!-- --&gt;</p></a></li>
-                    <a href='./childs/_doctype.html'><p>&lt;!DOCTYPE&gt;</p></a></li>
-                    <a href='./childs/_html.html'><p>&lt;HTML&gt;</p></a></li>
-                    <a href='./childs/_head.html'><p>&lt;HEAD&gt;</p></a></li>
-                    <a href='./childs/_meta.html'><p>&lt;META&gt;</p></a></li>
-                    <a href='./childs/_script.html'><p>&lt;SCRIPT&gt;</p></a></li>
-                    <a href='./childs/_style.html'><p>&lt;STYLE&gt;</p></a></li>
-                    <a href='./childs/_body.html'><p>&lt;BODY&gt;</p></a></li>
-                    <a href='./childs/_footer.html'><p>&lt;FOOTER&gt;</p></a></li>
-                </div>
+                <a href='./tutorial.html'><p>Main Page</p></a>
+                    <ul>
+                        <li><a href="#INTRO">Introduction</a></li>
+                        <li><a href="#WHATISHTML">What is HTML?</a></li>
+                        <li><a href="#ELEMENTS">Elements</a></li>
+                        <li><a href="#TAGS">Tags</a></li>
+                        <li><a href="#CONCLUSION">Conclusion</a></li>
+                    </ul>
+                <a href='./videos.html'><p>Videos</p></a>
+                <a href='./quiz.html'><p>Quiz</p></a>
             </div>
             <div class="gtranslate_wrapper"></div>
             <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
@@ -77,16 +72,44 @@
                 <img src='./media/images/htmlbanner.png' width='1300px'>
             </div>
             <div>
-                <h1 id='INTRO'>Introduction</h1>
-                <p>HTML stands for HyperText Markup Language and it is a markup language used for structuring and presenting content using tags within the document on the World Wide Web. It is being used to design web pages. HTML is an abbreviation of Hypertext and Markup language. HTML5 is the fifth and current version of HTML. It has improved the markup available for documents and has introduced application programming interfaces (API) and Document Object Model (DOM).</p>
-                <h3>Source: <a href='https://www.geeksforgeeks.org/html5-introduction/' target='_blank'>Geeksforgeeks</a>, <a href='https://en.wikipedia.org/wiki/HTML5' target='_blank'>Wikipedia</a></h3>
+                <h1>Introduction</h1>
+                <h1 class="anchor" id='INTRO'></h1>
+                <h2>What is HTML?</h2>
+                <h1 class="anchor" id='WHATISHTML'></h1>
+                <p>HTML stands for <b>HyperText Markup Language</b> and it is a markup language used for structuring and presenting content using tags within the document on the World Wide Web. It is being used to design web pages.</p>
+                <p>HTML5 has improved the markup available for documents and has introduced application programming interfaces (API) and Document Object Model (DOM).</p>
+                <h2>HTML has a lot of usages, including:</h2>
+                <ul>
+                    <li><b>Web development:</b> Developers use HTML code to design how a browser displays web page elements, such as text, hyperlinks, and media files.</li>
+                    <li><b>Internet navigation:</b> Users can easily navigate and insert links between related pages and websites as HTML is heavily used to embed hyperlinks.</li>
+                    <li><b>Web documentation:</b> HTML makes it possible to organize and format documents, similarly to Microsoft Word.</li>
+                </ul>
+                <p>HTML is not considered a programming language as it can't create dynamic functionality. It is now considered an official web standard. The World Wide Web Consortium (W3C) maintains and develops HTML specifications, along with providing regular updates.</p>
+                <p>HTML documents are files that end with a <code>.html</code> or <code>.htm</code> extension. A web browser reads the HTML file and renders its content so that internet users can view it.</p>
+                <img src="./media/images/file_ext.png" alt="files used in this projects" style="margin-left:auto;margin-right:auto;width:70%;">
             </div>
             <hr>
             <div>
-                <h1 id="TAGS">Tags</h1>
-                <p>Tags are being used to define structures and contents and they are mostly case insensitive. Below are some of the basic tags.</p>
+                <h2>Elements</h2>
+                <h1 class="anchor" id='ELEMENTS'></h1>
+                <p>All HTML pages have a series of HTML elements, consisting of a set of tags and attributes.</p>
+                <p>HTML elements are the building blocks of a web page. A tag tells the web browser where an element begins and ends, whereas an attribute describes the characteristics of an element.</p>
+                <h2>The three main parts of an element are:</h2>
+                <ul>
+                    <li><b>Opening tag:</b> State where an element starts. The tag is wrapped with opening and closing angle brackets. E.g. <code>&lt;P&gt;</code> is to create a paragraph element.</li>
+                    <li><b>Content:</b> This is the output that other users see.</li>
+                    <li><b>Closing tag:</b> The same as the opening tag, but with a forward slash before the element name. E.g. <code>&lt;/P&gt;</code> is to end a paragraph element.</li>
+                </ul>
+                <p>The combination will create an HTML element.</p>
+                <p>However, not every elements need a closing tag. Some just need an opening tag. <code>&lt;BR&gt;</code> and <code>&lt;HR&gt;</code> are good examples.</p>
+            </div>
+            <hr>
+            <div>
+                <h2>Tags</h2>
+                <h1 class="anchor" id='TAGS'></h1>
+                <p>Tags are being used to define structures and contents and they are mostly case insensitive.</p>
+                <p>Below are some of the basic tags.</p>
                 <div>
-                    <h2 id="STRUCTURAL">Structural tags</h2>
                     <table>
                         <tr>
                             <th style='width: 200px;'>Tag</th>
@@ -130,18 +153,28 @@
                         </tr>
                     </table>
                 </div>
-                <div>
-                    <h1>Tutorials:</h1>
-                    <ul>
-                        <li><a href="./childs/how_to_iframe.html" target="_self">How to create an iframe</a></li>
-                        <li><a href="./childs/how_to_button.html" target="_self">How to make a button with ripple effect</a></li>
-                    </ul>
-                </div>
-                <h3>Source: <a href='https://www.tutorialrepublic.com/html-reference/html5-tags.php' target='_blank'>TutorialRepublic, <a href='https://www.w3schools.com/tags/ref_byfunc.asp' target='_blank'>W3Schools</a></h3>
             </div>
+            <hr>
+            <div>
+                <h1>Tutorials:</h1>
+                <h1 class="anchor" id='TUTORIAL'></h1>
+                <ul>
+                    <li><a href="./childs/how_to_iframe.html" target="_self">How to create an iframe</a></li>
+                    <li><a href="./childs/how_to_button.html" target="_self">How to make a button with ripple effect</a></li>
+                </ul>
+            </div>
+            <hr>
+            <div>
+                <h1>Conclusion</h1>
+                <h1 class="anchor" id='CONCLUSION'></h1>
+                <p>HTML is the primary markup language found on the internet. Every HTML page has a series of elements that create the content structure of a web page or application.</p>
+                <p>HTML is a beginner-friendly language with plenty of support and is mainly used for static website pages. HTML works best together with CSS for the styling and JavaScript for the functionality.</p>
+                <h2>Submit a feedback form to let me know if you have any other favorite resources to learn HTML with. Happy coding!</h2>
+            </div>
+            <h3>Source: <a href='https://www.geeksforgeeks.org/html5-introduction/' target='_blank'>Geeksforgeeks</a>, <a href='https://en.wikipedia.org/wiki/HTML5' target='_blank'>Wikipedia</a>, <a href='https://www.hostinger.com/tutorials/what-is-html' target='_blank'>Hostinger Tutorials</a>, <a href='https://www.tutorialrepublic.com/html-reference/html5-tags.php' target='_blank'>TutorialRepublic, <a href='https://www.w3schools.com/tags/ref_byfunc.asp' target='_blank'>W3Schools</a></h3>
         </div>
         <footer>
-            <p class="p" style="text-align:right; padding-right:10px;">Open source project by [it0007]. Last updated: 29 May 2023</p>
+            <p class="p" style="text-align:right; padding-right:10px;">Open source project by [it0007]. Last updated: 5 June 2023</p>
         </footer>
     </body>
 </html>

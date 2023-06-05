@@ -18,6 +18,12 @@ h2 {
     color: var(--minortext);
     font: 20px Verdana;
 }
+h1.anchor {
+    display: block;
+    position: relative;
+    top: -150px;
+    visibility: hidden;
+}
 h3 {
     color: var(--minortext);
     font: 10px Verdana;
@@ -25,6 +31,7 @@ h3 {
 p {
     color: var(--maintext);
     font: 15px Verdana;
+    line-height: 30px;
 }
 img {
     display: block;
@@ -158,6 +165,7 @@ td {
 footer {
     padding-top: 5px;
     padding-bottom: 10px;
+    background-color: var(--secondary);
 }
 code {
     font-family: monospace;
@@ -223,7 +231,7 @@ code {
 }
 .sidenav {
     height: 100%;
-    width: 210px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -234,7 +242,7 @@ code {
     padding-top: 10px;
 }
 .sidenav a {
-    padding: 1px 6px 1px 35px;
+    padding: 0px 6px 0px 35px;
     text-decoration: none;
     color: var(--maintext);
     display: block;
@@ -250,7 +258,7 @@ code {
     color: var(--maintext);
 }
 .main {
-    margin-left: 210px; /* Same as the width of the sidenav */
+    margin-left: 250px; /* Same as the width of the sidenav */
     padding-top: 60px;
     padding-left: 200px;
     padding-right: 200px;
@@ -313,8 +321,8 @@ select:-moz-focusring {
 .theme-dark {
     --mainaccent: #17a8d4;
     --minoraccent: #115569;
-    --maintext: #fcfcfc;
-    --minortext: #bfcbde;
+    --maintext: #dedede;
+    --minortext: #8eade7;
     --primary: #161618;
     --primary2: #2b2c2b;
     --secondary: #212124;
@@ -325,8 +333,8 @@ select:-moz-focusring {
 .theme-light {
     --mainaccent: #7e98e6;
     --minoraccent: #455fc5;
-    --maintext: #0c0c0c;
-    --minortext: #32353b;
+    --maintext: #3e3e3e;
+    --minortext: #2484c4;
     --primary: #f0f0f0;
     --primary2: #dddddc;
     --secondary: #fcfcfc;

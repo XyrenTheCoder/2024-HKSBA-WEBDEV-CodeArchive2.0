@@ -1,23 +1,24 @@
-<!-- dark theme -->
-main blue: #17a8d4
-minor blue: #115569
-main white: #fcfcfc
-minor white: #bfcbde
-main black: #161618
-minor black: #2b2c2b
-main gray: #212124
-minor gray: #5c5c5b
-
-<!-- light theme -->
-main purple: #7e98e6
-minor purple: #455fc5455fc5
-main black: #0c0c0c
-minor black: #32353b
-main white: #f0f0f0
-minor white: #dddddc
-main lightgray: #fcfcfc
-minor lightgray: #d6d6d4
-
-<!-- code colors -->
-tags: #e06c75
-attr: #d19a66
+.theme-dark {
+    --mainaccent: #17a8d4;
+    --minoraccent: #115569;
+    --maintext: #dedede;
+    --minortext: #8eade7;
+    --primary: #161618;
+    --primary2: #2b2c2b;
+    --secondary: #212124;
+    --secondary2: #5c5c5b;
+    --codedark: #e06c75;
+    --codeattr: #d19a66;
+}
+.theme-light {
+    --mainaccent: #7e98e6;
+    --minoraccent: #455fc5;
+    --maintext: #3e3e3e;
+    --minortext: #2484c4;
+    --primary: #f0f0f0;
+    --primary2: #dddddc;
+    --secondary: #fcfcfc;
+    --secondary2: #d6d6d4;
+    --codedark: #e06c75;
+    --codeattr: #d19a66;
+}
