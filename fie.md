@@ -170,6 +170,3 @@
 	</head>
 <head>
 ```
-
-
-https://www.w3schools.com/quiztest/result.asp
