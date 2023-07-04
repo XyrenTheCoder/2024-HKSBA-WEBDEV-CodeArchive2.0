@@ -170,3 +170,66 @@
 	</head>
 <head>
 ```
+<div>
+            <div class="topnav">
+                <img align="left" src="../media/images/codearchive.gif">
+                <div>
+                    <a href="../index.html" target="_self">&#x1F511;Logout</a>
+                    <a href="https://forms.gle/7dtpB1RuatVe6Rtu9" target="_blank">&#x1F4AC;Feedback</a>
+                    <a href="../contact.html">&#x1F5A5;&#xFE0F;Contact</a>
+                    <a class="active" href="../tutorial.html" target="_self">&#x1F3E0;Home</a>
+                </div>
+            </div>
+            <div class="sidenav">
+                <br><br><br>
+                <a href='../tutorial.html'><p>Main page</p></a>
+                    <a href="../tutorial.html#INTRO"><p>&nbsp;&nbsp;&nbsp;Introduction</p></a>
+                    <a href="../tutorial.html#WHATISHTML"><p>&nbsp;&nbsp;&nbsp;What is HTML?</p></a>
+                    <a href="../tutorial.html#ELEMENTS"><p>&nbsp;&nbsp;&nbsp;Elements</p></a>
+                    <a href="../tutorial.html#TAGS"><p>&nbsp;&nbsp;&nbsp;Tags</p></a>
+                        <div translate='no'>
+                            <a href='../childs/_comment.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commenting in HTML</p></a></li>
+                            <a href='../childs/_doctype.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DOCTYPE Declaration</p></a></li>
+                            <a href='../childs/_html.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set up document</p></a></li>
+                            <a href='../childs/_head.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Head of a document</p></a></li>
+                            <a href='../childs/_meta.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set up metadata</p></a></li>
+                            <a href='../childs/_script.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using scripts</p></a></li>
+                            <a href='../childs/_style.html'><p><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Styling</span></p></a></li>
+                            <a href='../childs/_body.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Body container</p></a></li>
+                            <a href='../childs/_footer.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set up footer</p></a></li>
+                            <a href='../childs/!global_attr.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Global attributes</p></a></li>
+                            <a href='../childs/!event_attr.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Event attributes</p></a></li>
+                        </div>
+                        <a href="../tutorial.html#TUTORIAL"><p>&nbsp;&nbsp;&nbsp;Tutorials</p></a>
+                        <a href="../tutorial.html#CONCLUSION"><p>&nbsp;&nbsp;&nbsp;Conclusion</p></a>
+                <a href='../videos.html'><p>Videos</p></a>
+                <a href='../quizintro.html'><p>Quizzes</p></a>
+                <br><br><br><br><br><br>
+            </div>
+
+<div class="sidenav">
+                <br><br><br>
+                <a href='./tutorial.html'><p><span>Main page</span></p></a>
+                    <a href="#INTRO"><p>&nbsp;&nbsp;&nbsp;Introduction</p></a>
+                    <a href="#WHATISHTML"><p>&nbsp;&nbsp;&nbsp;What is HTML?</p></a>
+                    <a href="#ELEMENTS"><p>&nbsp;&nbsp;&nbsp;Elements</p></a>
+                    <a href="#TAGS"><p>&nbsp;&nbsp;&nbsp;Tags</p></a>
+                        <a href='./childs/_comment.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Commenting in HTML</p></a></li>
+                        <a href='./childs/_doctype.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DOCTYPE Declaration</p></a></li>
+                        <a href='./childs/_html.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set up document</p></a></li>
+                        <a href='./childs/_head.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Head of a document</p></a></li>
+                        <a href='./childs/_meta.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set up metadata</p></a></li>
+                        <a href='./childs/_script.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Using scripts</p></a></li>
+                        <a href='./childs/_style.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Styling</p></a></li>
+                        <a href='./childs/_body.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Body container</p></a></li>
+                        <a href='./childs/_footer.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Set up footer</p></a></li>
+                        <a href='./childs/!global_attr.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Global attributes</p></a></li>
+                        <a href='./childs/!event_attr.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Event attributes</p></a></li>
+                    <a href="#TUTORIAL"><p>&nbsp;&nbsp;&nbsp;Tutorials</p></a>
+                        <a href='./childs/how_to_button.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ripple effect button</p></a></li>
+                        <a href='./childs/how_to_iframe.html'><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Creating iframe</p></a></li>
+                    <a href="#CONCLUSION"><p>&nbsp;&nbsp;&nbsp;Conclusion</p></a>
+                <a href='./videos.html'><p>Videos</p></a>
+                <a href='./quizintro.html'><p>Quizzes</p></a>
+                <br><br><br><br><br><br>
+            </div>

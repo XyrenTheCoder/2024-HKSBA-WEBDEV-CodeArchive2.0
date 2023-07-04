@@ -2,7 +2,7 @@
 <meta charset="UTF-8">
 <html>
     <head>
-        <title>CodeArchive2.0 - Contact</title>
+        <title>CodeArchive2.0 - HTML5 Quiz</title>
         <link rel="stylesheet" href="./styling/maintheme.css">
         <script>
             function setTheme(themeName) {
@@ -26,6 +26,7 @@
             } else {
                 getc = gets[0];
             }
+
             let gettheme = getc.split('=');
             if (gettheme[0] === 'theme' && gettheme[1] === 'theme-light') {
                 setTheme('theme-light');
@@ -41,8 +42,8 @@
                 <div>
                     <a href="./index.html" target="_self">&#x1F511;Logout</a>
                     <a href="https://forms.gle/7dtpB1RuatVe6Rtu9" target="_blank">&#x1F4AC;Feedback</a>
-                    <a class="active" href="./contact.html">&#x1F5A5;&#xFE0F;Contact</a>
-                    <a href="./tutorial.html" target="_self">&#x1F3E0;Home</a>
+                    <a href="./contact.html">&#x1F5A5;&#xFE0F;Contact</a>
+                    <a class="active" href="./tutorial.html" target="_self">&#x1F3E0;Home</a>
                     <label id="switch" class="switch">
                         <input type="checkbox" onchange="toggleTheme()" id="slider">
                         <span class="slider round"></span>
@@ -53,7 +54,10 @@
                 <br><br><br>
                 <a href='./tutorial.html'><p>Main page</p></a>
                 <a href='./videos.html'><p>Videos</p></a>
-                <a href='./quizintro.html'><p>Quizzes</p></a>
+                <a href='./quizintro.html'><p><span>Quizzes</span></p></a>
+                    <a href='./quizzes/quizlv0.html'><p>&nbsp;&nbsp;&nbsp;Level 0</p></a>
+                    <a href='./quizzes/quizlv1.html'><p>&nbsp;&nbsp;&nbsp;Level 1</p></a>
+                    <a href='./quizzes/quizlv2.html'><p>&nbsp;&nbsp;&nbsp;Level 2</p></a>
             </div>
             <div class="gtranslate_wrapper"></div>
             <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
@@ -62,27 +66,21 @@
         <div class='main'>
             <div>
                 <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
-                <h1 id="CONTACT">Contacts</h1>
-                <div>
-                    <h1>Hey coders!</h1>
-                    <h2>Are you a coding enthusiast? If you're interested in my work, please support me on Github by following!</h2>
-                    <p><a href='https://github.com/archisha69/2024-HKSBA-WEBDEV-CodeArchive2.0' target="_blank">Click me to repository</a></p>
-                    <h1 style="text-align: center;">-~ Stay motivated! ~-</h1>
-                </div>
-                <fieldset>
-                    <legend>Contact me</legend>
-                    <img src="./media/images/mygithub.png" width="1300px" alt='Link to Github'>
-                    <ul>
-                        <li translate='no'><b>Discord: </b>xyrenchess</li>
-                        <li translate='no'><b>GitHub: </b><a href="https://github.com/archisha69" tabindex="1" target="_blank">archisha69</a></li>
-                        <li><b>GitHub organization: </b><a href="https://github.com/PyBotDevs" tabindex="1" target="_blank">NKA Development Group</a></li>
-                        <li><b>Instagram: </b><a href="https://www.instagram.com/archish69/" tabindex="1" target="_blank">archish69</a></li>
-                    </ul>
-                </fieldset>
+                <h1>HTML Quizzes</h1>
+                <h2>Wanna test the knowledge you have? Test yourself with the quizzes!</h2>
+                <hr>
+                <p>Levels:</p>
+                    <input class="squarebutton" type="button" value="0" onClick="window.open('./quizzes/quizlv0.html', target='_self');">
+                    <input class="squarebutton" type="button" value="1" onClick="window.open('./quizzes/quizlv1.html', target='_self');">
+                    <input class="squarebutton" type="button" value="2" onClick="window.open('./quizzes/quizlv2.html', target='_self');">
             </div>
+
+            <h3>Source: <a href='https://w3schools.com' target='_blank'>W3Schools</a></h3>
+            <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
         </div>
-        <footer>
-            <p class="p" style="text-align:right; padding-right:10px;">Open source project by [it0007]. Last updated: 4 July 2023</p>
-        </footer>
-    </body>
+    </div>
+</body>
+<footer>
+    <p class="p" align="right" style="padding-right:10px;">Last updated: 4 July 2023</p>
+</footer>
 </html>

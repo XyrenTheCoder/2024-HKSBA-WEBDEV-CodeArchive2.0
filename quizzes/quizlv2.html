@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>CodeArchive2.0 - HTML5 Quiz</title>
+        <link rel="stylesheet" href="../styling/maintheme.css">
+        <script>
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+                document.cookie = `theme=${themeName}; path=/; SameSite=None; Secure`;
+            }
+
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-dark') {
+                    setTheme('theme-light');
+                } else {
+                    setTheme('theme-dark');
+                }
+            }
+
+            let gets = decodeURIComponent(document.cookie).split('; ');
+            console.log(gets);
+            if (gets.length == 2) {
+                getc = gets[1];
+            } else {
+                getc = gets[0];
+            }
+
+            let gettheme = getc.split('=');
+            if (gettheme[0] === 'theme' && gettheme[1] === 'theme-light') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        </script>
+    </head>
+    <body bgcolor="#161618" style='overflow-x:hidden;'>
+        <div>
+            <div class="topnav">
+                <img align="left" src="../media/images/codearchive.gif">
+                <div>
+                    <a href="../index.html" target="_self">&#x1F511;Logout</a>
+                    <a href="https://forms.gle/7dtpB1RuatVe6Rtu9" target="_blank">&#x1F4AC;Feedback</a>
+                    <a href="../contact.html">&#x1F5A5;&#xFE0F;Contact</a>
+                    <a class="active" href="../tutorial.html" target="_self">&#x1F3E0;Home</a>
+                    <label id="switch" class="switch">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="sidenav">
+                <br><br><br>
+                <a href='../tutorial.html'><p>Main page</p></a>
+                <a href='../videos.html'><p>Videos</p></a>
+                <a href='../quizintro.html'><p>Quizzes</p></a>
+                    <a href='../quizzes/quizlv0.html'><p>&nbsp;&nbsp;&nbsp;Level 0</p></a>
+                    <a href='../quizzes/quizlv1.html'><p>&nbsp;&nbsp;&nbsp;Level 1</p></a>
+                    <a href='../quizzes/quizlv2.html'><p><span>&nbsp;&nbsp;&nbsp;Level 2</span></p></a>
+            </div>
+            <div class="gtranslate_wrapper"></div>
+            <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+            <script>window.gtranslateSettings = {"default_language":"en","languages":["en","zh-TW","el","es","ru","de","tl","fr","it"],"wrapper_selector":".gtranslate_wrapper"}</script>
+        </div>
+        <div class='main'>
+            <div>
+                <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+                <h1>HTML Quiz Level 2</h1>
+                <hr>
+                <h2>Q1: What is the correct HTML for setting unicode as the character set of an document?</h2>
+                <div translate='no'>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;meta charset='unicode'&gt;
+                            <input type="radio" name="q1" id="q1-0">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;meta charset='UTF-8'&gt;
+                            <input type="radio" name="q1" id="q1-1">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;charset type='unicode'&gt;
+                            <input type="radio" name="q1" id="q1-2">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;charset type='UTF-8'&gt;
+                            <input type="radio" name="q1" id="q1-3">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+                <p id="q1-ans"></p>
+                <hr>
+                <h2>Q2: Which of the following is an attribute of the &lt;META&gt; tag?</h2>
+                <div translate='no'>
+                    <div class="label0">
+                        <label class='label'>
+                            http-equiv
+                            <input type="radio" name="q2" id="q2-0">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            onload
+                            <input type="radio" name="q2" id="q2-1">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            oncontextmenu
+                            <input type="radio" name="q2" id="q2-2">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            metadata
+                            <input type="radio" name="q2" id="q2-3">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+                <p id="q2-ans"></p>
+                <hr>
+                <h2>Q3: Which of the following tags CAN'T be placed inside &lt;BODY&gt;?</h2>
+                <div translate='no'>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;h3&gt;
+                            <input type="radio" name="q3" id="q3-0">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;hr&gt;
+                            <input type="radio" name="q3" id="q3-1">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;script&gt;
+                            <input type="radio" name="q3" id="q3-2">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;meta&gt;
+                            <input type="radio" name="q3" id="q3-3">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+                <p id="q3-ans"></p>
+                <hr>
+                <h2>Q4: Which of the following is an appropriate comment in HTML?</h2>
+                <div translate='no'>
+                    <div class="label0">
+                        <label class='label'>
+                            // comment
+                            <input type="radio" name="q4" id="q4-0">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            &lt;!--comment--&gt;
+                            <input type="radio" name="q4" id="q4-1">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            # comment
+                            <input type="radio" name="q4" id="q4-2">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            """comment"""
+                            <input type="radio" name="q4" id="q4-3">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+                <p id="q4-ans"></p>
+                <hr>
+                <h2>Q5: A footer usually contains:</h2>
+                <div>
+                    <div class="label0">
+                        <label class='label'>
+                            HTML elements
+                            <input type="radio" name="q5" id="q5-0">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            Images for metadata.
+                            <input type="radio" name="q5" id="q5-1">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            Authorship information, contact, copyright information, sitemap and back to top links.
+                            <input type="radio" name="q5" id="q5-2">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                    <div class="label0">
+                        <label class='label'>
+                            Paragraphs for linking to other websites.
+                            <input type="radio" name="q5" id="q5-3">
+                            <span class="radio"></span>
+                        </label>
+                    </div>
+                </div>
+                <p id="q5-ans"></p>
+                <hr>
+                <h3>Source: <a href='https://w3schools.com' target='_blank'>W3Schools</a></h3>
+                <input class="button" type="button" value="Check answers!" onClick="checkans();">
+                <script>
+                    var score = 0
+                    function checkans() {
+                        // question 1
+                        if (document.getElementById("q1-1").checked) {
+                            document.getElementById("q1-ans").innerText = 'Correct answer!';
+                            score += 1;
+                        } else if (document.getElementById("q1-0").checked || document.getElementById("q1-1").checked || document.getElementById("q1-3").checked) {
+                            document.getElementById("q1-ans").innerText = 'Incorrect answer!';
+                        } else {
+                            document.getElementById("q1-ans").innerText = "You didn't answer!";
+                        }
+
+                        // question 2
+                        if (document.getElementById("q2-0").checked) {
+                            document.getElementById("q2-ans").innerText = 'Correct answer!';
+                            score += 1;
+                        } else if (document.getElementById("q2-1").checked || document.getElementById("q2-2").checked || document.getElementById("q2-3").checked) {
+                            document.getElementById("q2-ans").innerText = 'Incorrect answer!';
+                        } else {
+                            document.getElementById("q2-ans").innerText = "You didn't answer!";
+                        }
+
+                        // question 3
+                        if (document.getElementById("q3-3").checked) {
+                            document.getElementById("q3-ans").innerText = 'Correct answer!';
+                            score += 1;
+                        } else if (document.getElementById("q3-0").checked || document.getElementById("q3-1").checked || document.getElementById("q1-2").checked) {
+                            document.getElementById("q3-ans").innerText = 'Incorrect answer!';
+                        } else {
+                            document.getElementById("q3-ans").innerText = "You didn't answer!";
+                        }
+
+                        // question 4
+                        if (document.getElementById("q4-1").checked) {
+                            document.getElementById("q4-ans").innerText = 'Correct answer!';
+                            score += 1;
+                        } else if (document.getElementById("q4-0").checked || document.getElementById("q4-2").checked || document.getElementById("q4-3").checked) {
+                            document.getElementById("q4-ans").innerText = 'Incorrect answer!';
+                        } else {
+                            document.getElementById("q4-ans").innerText = "You didn't answer!";
+                        }
+
+                        // question 5
+                        if (document.getElementById("q5-2").checked) {
+                            document.getElementById("q5-ans").innerText = 'Correct answer!';
+                            score += 1;
+                        } else if (document.getElementById("q5-0").checked || document.getElementById("q5-1").checked || document.getElementById("q5-3").checked) {
+                            document.getElementById("q5-ans").innerText = 'Incorrect answer!';
+                        } else {
+                            document.getElementById("q5-ans").innerText = "You didn't answer!";
+                        }
+
+                        var percent = score / 5 * 100
+                        if (percent == 100) {
+                            document.getElementById("bottom_text").innerText = 'Perfect!';
+                        } else if (percent >= 80) {
+                            document.getElementById("bottom_text").innerText = 'Well done!';
+                        } else if (percent >= 50) {
+                            document.getElementById("bottom_text").innerText = 'Not bad!';
+                        } else {
+                            document.getElementById("bottom_text").innerText = 'Work harder!';
+                        }
+                        document.getElementById("score").innerText = `Your score: ${score} / 5`;
+                        document.getElementById("percentage").innerText = `Your percentage: ${Math.round(percent)}%`;
+                        score = 0;
+                    }
+                </script>
+                <p id="bottom_text" align="center"></p>
+                <h1 id="percentage" align="center"></h1>
+                <h2 id="score" align="center"></h2>
+            </div>
+            <p><a class='previous round' onclick='window.history.back();'>&#8249; Back to previous</a></p>
+        </div>
+    </div>
+</body>
+<footer>
+    <p class="p" align="right" style="padding-right:10px;">Last updated: 4 July 2023</p>
+</footer>
+</html>
