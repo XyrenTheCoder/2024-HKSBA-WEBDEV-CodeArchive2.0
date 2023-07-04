@@ -155,7 +155,7 @@ td {
     display: block;
     background-color: var(--mainaccent);
     color: var(--maintext);
-    width: 180px;
+    width: auto;
     height: 30px;
     font: 18px Verdana;
 }
