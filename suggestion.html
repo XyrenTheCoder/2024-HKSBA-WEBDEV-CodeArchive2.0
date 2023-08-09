@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+    <head>
+        <title>CodeArchive2.0 - HTML5</title>
+        <link rel="stylesheet" href="./styling/maintheme.css">
+        <script>
+            function setTheme(themeName) {
+                localStorage.setItem('theme', themeName);
+                document.documentElement.className = themeName;
+                document.cookie = `theme=${themeName}; path=/; SameSite=None; Secure`;
+            }
+
+            function toggleTheme() {
+                if (localStorage.getItem('theme') === 'theme-dark') {
+                    setTheme('theme-light');
+                } else {
+                    setTheme('theme-dark');
+                }
+            }
+
+            let gets = decodeURIComponent(document.cookie).split('; ');
+            console.log(gets);
+            if (gets.length == 2) {
+                getc = gets[1];
+            } else {
+                getc = gets[0];
+            }
+            let gettheme = getc.split('=');
+            if (gettheme[0] === 'theme' && gettheme[1] === 'theme-light') {
+                setTheme('theme-light');
+            } else {
+                setTheme('theme-dark');
+            }
+        </script>
+    </head>
+    <body style='overflow-x:hidden;'>
+        <div>
+            <div class="topnav">
+                <img align="left" src="./media/images/codearchive.gif">
+                <div>
+                    <a href="./index.html" target="_self">&#x1F511;Logout</a>
+                    <a href="https://forms.gle/7dtpB1RuatVe6Rtu9" target="_blank">&#x1F4AC;Feedback</a>
+                    <a href="./contact.html">&#x1F5A5;&#xFE0F;Contact</a>
+                    <a class="active" href="./tutorial.html" target="_self">&#x1F3E0;Home</a>
+                    <label id="switch" class="switch">
+                        <input type="checkbox" onchange="toggleTheme()" id="slider">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="sidenav">
+                <br><br><br>
+                <a href='./tutorial.html'><p>Main page</p></a>
+                <a href='./videos.html'><p>Videos</p></a>
+                <a href='./quizintro.html'><p>Quizzes</p></a>
+                <a href='./suggestion.html'><p><span>Suggestions</span></p></a>
+            </div>
+            <div class="gtranslate_wrapper"></div>
+            <script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+            <script>window.gtranslateSettings = {"default_language":"en","languages":["en","zh-TW","el","es","ru","de","tl","fr","it"],"wrapper_selector":".gtranslate_wrapper"}</script>
+        </div>
+        <div class='main'>
+            <div>
+                <h1>Before Coding</h1>
+                <p>Before starting, there are few popular HTML editors that you can use. Below are the most used editors.</p>
+                <hr>
+                <h2>WYSIWYG Editor</h2>
+                    <p>WYSIWYG stands for <b>"What You See Is What You Get"</b>. WYSIWYG editor shows a live preview of your page as you add or modify elements.</p>
+                    <p>The code editor provides a visual interface that you can edit your code easily.</p>
+                    <p>This type of HTML editor an excellent option for beginners with little to no coding experience.</p>
+                <hr>
+                <h2>Text-based HTML Editor</h2>
+                    <p>Text-based editor is designed to enable more intricate coding practices.</p>
+                    <p>It gives advanced users more control over their work as they can directly modify the code.</p>
+                    <p>Auto-completion, syntax highlighting, and error detection are primarily available in this type of editors. However, since there is no live preview of your page, it requires enough HTML knowledge to prevent errors.</p>
+                <hr>
+                    <h1>1. <a href='https://github.blog/2022-06-08-sunsetting-atom' target="_blank">Atom</a></h1>
+                    <img src="./media/images/atom.png" width='1200px'>
+                    <div style="display:flex;">
+                        <img src="./media/images/atom_preview.png" width="600px">
+                        <img src="./media/images/atom_preview2.jpg" width="600px">
+                    </div>
+                    <p><b>Atom</b> is one of the most popular HTML editors. This open-source code editor aims to offer premium tools while keeping them completely free.</p>
+                    <p>It comes with open-source packages maintained by the GitHub community.</p>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li><b>Pre-installed themes:</b> Interface is customizable by choosing different themes.</li>
+                        <li><b>Multi-language support:</b> <b>Atom</b> supports multiple programming and scripting languages, such as JavaScript, Node.js, and CSS.</li>
+                        <li><b>Built-in package manager:</b> More than 80 built-in packages available. Users can add up to 8,700 additional packages, as well as develop custom packages.</li>
+                        <li><b>Multiple panes:</b> Allow spliting interface into multiple windows to easily compare and write code across different files.</li>
+                        <li><b>Syntax highlighting:</b> Easier to spot errors and identify different code types and coding languages.</li>
+                        <li><b>Smart auto-completion:</b> Code can be written faster with its smart autosuggestions.</li>
+                    </ul>
+                    <p><b>Atom</b> is available for Windows, OS X, and Linux (x64).</p>
+
+                    <h1>2. <a href='https://notepad-plus-plus.org' target="_blank">Notepad++</a></h1>
+                    <img src="./media/images/notepadplusplus.jpg" width='1200px'>
+                    <div style="display:flex;">
+                        <img src="./media/images/notepadplusplus_preview.webp" width="600px">
+                        <img src="./media/images/notepadplusplus_preview2.webp" width="600px">
+                    </div>
+                    <p><b>Notepad++</b> is a free, open-source code editor developed for Windows-based computers.</p>
+                    <p>The program is lightweight and comes with a straightforward user interface. A mobile version is also available.</p>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li><b>Powerful code editing tools:</b> <b>Notepad++</b> ensures fast processing speed with lighter program size.</li>
+                        <li><b>Multi-language support:</b> Support for web development, from HTML and CSS to JavaScript and PHP.</li>
+                        <li><b>Plugin integrations:</b> Extend functionality and add more advanced features by creating new plugins or installing third-party plugins.</li>
+                        <li><b>Split-screen layout:</b> Allow spliting interface into two windows to easily compare and write code across different files.</li>
+                        <li><b>FTP connection:</b> Allow users to directly connect to server files and edit them from the dashboard.</li>
+                        <li><b>Document map:</b> Overview and sections of a document, making it easier for users to navigate within a larger file.</li>
+                    </ul>
+                    <p><b>Notepad++</b> is available for Windows and Linux (avaliable using Wine only).</p>
+
+                    <h1>3. <a href='https://code.visualstudio.com' target="_blank">Visual Studio Code</a></h1>
+                    <img src="./media/images/vscode.png" width='1200px'>
+                    <div style="display:flex;">
+                        <img src="./media/images/vscode_preview.png" width="600px">
+                        <img src="./media/images/vscode_preview2.png" width="600px">
+                    </div>
+                    <p><b>Visual Studio Code</b> is an open-source, free HTML editor from Microsoft built on Github's Electron. With this framework, users can create projects using HTML, CSS, and JavaScript across multiple operating systems.</p>
+                    <p>It also integrates with Microsoft Azure which makes it easy for code deployment.</p>
+                    <h2>Features:</h2>
+                    <ul>
+                        <li><b>Auto-completion:</b> IntelliSense features to provide different types of auto-completion, including variables, fields, and function definitions.</li>
+                        <li><b>Multi-language extensions:</b> Allow IntelliSense to work with other programming languages by installing plugins.</li>
+                        <li><b>Debugging:</b> Built-in debugger tool is available within the dashboard to quickly edit, compile, or debug code.</li>
+                        <li><b>Multiple panes:</b> Allow spliting interface into multiple windows to easily compare and write code across different files.</li>
+                        <li><b>Code snippets:</b> Includes built-in snippets powered by IntelliSense, making it easier to enter repeating code patterns.</li>
+                        <li><b>Multi-root workspace:</b> Users can simultaneously work on different projects or files from different parent folders.</li>
+                    </ul>
+                    <p><b>Visual Studio Code</b> is available for Windows (x64), OS X and Linux (x64).</p>
+
+            </div>
+            <h3>Source: <a href='https://www.hostinger.com/tutorials/best-html-editors' target='_blank'>Hostinger</a></h3>
+        </div>
+        <footer>
+            <p class="p" style="text-align:right; padding-right:10px;">Open source project by [it0007]. Last updated: 9 August 2023</p>
+        </footer>
+    </body>
+</html>

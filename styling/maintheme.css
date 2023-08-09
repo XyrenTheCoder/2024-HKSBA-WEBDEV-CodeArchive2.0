@@ -4,7 +4,7 @@ html, body {
     background-color: var(--primary);
 }
 a {
-    color: var(--mainaccent)
+    color: var(--minortext)
 }
 a[tabindex]:focus {
     color: var(--minoraccent);
@@ -13,10 +13,12 @@ a[tabindex]:focus {
 h1 {
     color: var(--mainaccent);
     font: 30px Verdana;
+    line-height: 40px;
 }
 h2 {
     color: var(--minortext);
     font: 20px Verdana;
+    line-height: 35px;
 }
 h1.anchor {
     display: block;
@@ -65,7 +67,7 @@ ul {
     color: var(--maintext);
     background-color: var(--secondary);
     font: 18px Verdana;
-    line-height: 25px;
+    line-height: 35px;
 }
 ul li {
     color: var(--maintext);
